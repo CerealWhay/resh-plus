@@ -1,0 +1,51 @@
+@import "_fonts.scss";
+@import "_init.scss";
+
+#form {
+  background-color: $bg-color;
+  .form-maintext {
+    max-width: 1150px;
+    padding-top: 50px;
+    padding-bottom: 64px;
+    color: #ffffff;
+    font-family: "TT Norms";
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+    span {
+      font-weight: 700;
+      color: #e6540a;
+    }
+  }
+  .form-form {
+    margin-left: 100px;
+    padding-bottom: 65px;
+    .form-input {
+      height: 37px  ;
+      width: 390px;
+      padding-left: 35px;
+      margin-right: 35px;
+      background-color: $bg-color;
+      border-bottom: 1px solid white;
+      color: white;
+      font-family: "TT Norms";
+      font-size: 14px;
+      font-weight: 400;
+      opacity: 1;
+    }
+    button {
+      margin-left: 90px;
+      height: 37px;
+      display: inline-block;
+      border-radius: 20px;
+      padding: 0px 15px;
+      span {
+        color: #ffffff;
+        font-family: "TT Norms";
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+      }
+    }
+  }
+}

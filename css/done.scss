@@ -1,0 +1,196 @@
+@import "_fonts.scss";
+@import "_init.scss";
+
+@keyframes imgAnimation {
+  from {
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+}
+
+#done-works {
+  background-color: $bg-color;
+  #done-works-maintext {
+    padding-top: 50px;
+    padding-bottom: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    .done-works-maintext-name {
+      color: #ffffff;
+      font-family: "TT Norms";
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 36px;
+      text-align: left;
+      text-transform: uppercase;
+    }
+    #done-btns {
+      display: inline-block;
+      text-align: right;
+      div {
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 20px;
+        margin-left: 20px;
+        background-color: #000;
+        span {
+          color: #ffffff;
+          font-family: "TT Norms";
+          font-size: 14px;
+          font-weight: 400;
+          text-align: center;
+        }
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.6);
+        }
+        &:active {
+          background-color: $orange-color;
+        }
+      }
+    }
+  }
+  #done-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    column-gap: 15px;
+    .done-left-top {
+      background-color: $orange-color;
+      height: 483px;
+      width: 100%;
+      .done-left-top-img {
+        overflow: hidden;
+        width: 100%;
+        height: 326px;
+        img {
+          min-height: 326px;
+          overflow: hidden;
+          width: 100%;
+          animation-duration: 3s;
+          animation-name: imgAnimation;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+        }
+      }
+    }
+    .done-right-top {
+      display: flex;
+      justify-content: stretch;
+      .done-slide {
+        height: 326px;
+        width: 100%; 
+        .slide-hidden {
+          display: inline-block;
+          visibility: hidden;
+          width: 100%;
+          height: 100%;
+          transition: 0.3s;
+          opacity: 0;
+          .done-right-top-slide-site {
+            text-align: right;
+            margin-right: 60px;
+            margin-top: 25px;
+            margin-bottom: 110px;
+            color: #ffffff;
+            font-family: "TT Norms";
+            font-size: 14px;
+            font-weight: 400;
+          }
+          .done-right-top-slide-name {
+            margin-bottom: 40px;
+            padding-left: 21px;
+            max-width: 220px;
+            color: #ffffff;
+            font-family: "TT Norms";
+            font-size: 24px;
+            font-weight: 500;
+          }
+          .done-right-more {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            span {
+              margin-right: 15px;
+              align-self: center;
+              color: #ffffff;
+              font-family: "TT Norms";
+              font-size: 16px;
+              font-weight: 800;
+              text-transform: uppercase;
+            }
+          }
+        }
+        &:hover {
+          .slide-hidden {
+            visibility: visible;
+            opacity: 1;
+            background-color: #e6530ad5;
+          }
+        }
+      }
+    }
+    .done-bot {
+      grid-column: span 2;
+      margin-top: -110px;
+      .container {
+        display: flex;
+        justify-content: space-between;
+        .done-bot-left {
+          display: grid;
+          grid-template-columns: 450px auto;
+          grid-template-rows: 1fr 1fr;
+          align-items: center;
+          p {
+            grid-row: span 2;
+            color: #ffffff;
+            font-family: "TT Norms";
+            font-size: 30px;
+            font-weight: 500;
+            max-width: 400px;
+          }
+          span {
+            justify-self: end;
+            align-self: start;
+            color: #ffffff;
+            font-family: "TT Norms";
+            font-size: 14px;
+            font-weight: 400;
+            &:hover {
+              cursor: pointer;
+              color: $grey-color;
+            }
+          }
+          .done-left-more {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            span {
+              margin-right: 15px;
+              align-self: center;
+              color: #ffffff;
+              font-family: "TT Norms";
+              font-size: 16px;
+              font-weight: 800;
+              text-transform: uppercase;
+            }
+          }
+        }
+        .done-bot-right {
+          span {
+            color: #ffffff;
+            font-family: "TT Norms";
+            font-size: 30px;
+            font-weight: 800;
+            &:hover {
+              cursor: pointer;
+              color: $orange-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

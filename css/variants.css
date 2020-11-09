@@ -1,0 +1,400 @@
+@font-face {
+  font-family: 'FuturaPT';
+  src: url("fonts/FuturaPT-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Circe';
+  src: url("fonts/Circe-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Circe';
+  src: url("fonts/Circe-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-HeavyItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  outline: none;
+}
+
+html {
+  height: 101%;
+}
+
+/* always display scrollbars */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+strong {
+  font-weight: bold;
+}
+
+input {
+  outline: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  font: 100% TT Norms;
+}
+
+.container {
+  max-width: 1380px;
+  margin: 0px auto;
+}
+
+.g-btn {
+  background-color: #e6540a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.g-btn span {
+  color: white;
+}
+
+.g-btn:hover {
+  background-color: #da500c;
+  cursor: pointer;
+}
+
+.g-btn:active {
+  background-color: #d14e0c;
+}
+
+#variants {
+  background-color: #fff;
+}
+
+#variants #variants-maintext {
+  padding-top: 50px;
+  padding-bottom: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#variants #variants-maintext .variants-maintext-name {
+  color: #000;
+  font-family: "TT Norms";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+#variants #variants-maintext #variants-btns {
+  display: inline-block;
+  text-align: right;
+}
+
+#variants #variants-maintext #variants-btns div {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-left: 20px;
+  background-color: #efefef;
+}
+
+#variants #variants-maintext #variants-btns div span {
+  color: #000;
+  font-family: "TT Norms";
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+
+#variants #variants-maintext #variants-btns div:hover {
+  background-color: #cfcfcf;
+}
+
+#variants #variants-maintext #variants-btns div:active {
+  background-color: #e6540a;
+}
+
+#variants #variants-maintext #variants-btns div:active span {
+  color: white;
+}
+
+#variants .variants-slider-slick p {
+  margin-top: 25px;
+  width: 260px;
+  color: #000000;
+  font-family: "TT Norms";
+  font-size: 24px;
+  font-weight: 500;
+}
+
+#variants .variants-slider-slick p:hover {
+  color: #e6540a;
+  cursor: pointer;
+}
+
+#variants .variants-slider-slick .varinats-price {
+  display: inline-block;
+  margin-top: 15px;
+  font-family: "TT Norms";
+  font-size: 36px;
+  font-weight: 800;
+  text-align: left;
+}
+
+#variants .variants-slider-slick .varinats-price:hover {
+  color: #e6540a;
+  cursor: pointer;
+}
+
+#variants .variants-slider-slick .variants-more {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+#variants .variants-slider-slick .variants-more span {
+  margin-right: 15px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #000;
+  font-family: "TT Norms";
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+#variants .variants-slider-slick .variants-more:hover {
+  cursor: pointer;
+}
+
+#variants .variants-slider-slick .variants-more:hover span {
+  color: #e6540a;
+}
+
+#variants .variants-watch-all {
+  text-align: right;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  color: #000000;
+  font-family: "TT Norms";
+  font-size: 30px;
+  font-weight: 800;
+}
+
+#variants .variants-watch-all:hover {
+  cursor: pointer;
+  color: #e6540a;
+}
+/*# sourceMappingURL=variants.css.map */

@@ -1,0 +1,387 @@
+@font-face {
+  font-family: 'FuturaPT';
+  src: url("fonts/FuturaPT-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Circe';
+  src: url("fonts/Circe-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Circe';
+  src: url("fonts/Circe-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-HeavyItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("fonts/TTNorms-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  outline: none;
+}
+
+html {
+  height: 101%;
+}
+
+/* always display scrollbars */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+strong {
+  font-weight: bold;
+}
+
+input {
+  outline: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  font: 100% TT Norms;
+}
+
+.container {
+  max-width: 1380px;
+  margin: 0px auto;
+}
+
+.g-btn {
+  background-color: #e6540a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.g-btn span {
+  color: white;
+}
+
+.g-btn:hover {
+  background-color: #da500c;
+  cursor: pointer;
+}
+
+.g-btn:active {
+  background-color: #d14e0c;
+}
+
+#reviews {
+  min-height: 560px;
+  background-color: #efefef;
+}
+
+#reviews .slick-dots {
+  bottom: -50px;
+}
+
+#reviews .slick-dots li button:before {
+  color: black;
+}
+
+#reviews .slick-dots li.slick-active button {
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+#reviews .reviews-maintext {
+  max-width: 1150px;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  color: #000000;
+  font-family: "TT Norms";
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+#reviews .reviews-maintext span {
+  font-size: 24px;
+  line-height: normal;
+  text-transform: none;
+}
+
+#reviews .reviews-slider-slick .rev-slide {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 146px auto;
+      grid-template-columns: 146px auto;
+  -webkit-column-gap: 45px;
+          column-gap: 45px;
+}
+
+#reviews .reviews-slider-slick .rev-slide .rev-slide-text {
+  padding-top: 45px;
+}
+
+#reviews .reviews-slider-slick .rev-slide .rev-slide-text .rev-slide-name {
+  color: #000000;
+  font-family: "TT Norms";
+  font-weight: 400;
+  text-align: left;
+  font-size: 24px;
+}
+
+#reviews .reviews-slider-slick .rev-slide .rev-slide-text .rev-slide-name span {
+  font-size: 16px;
+}
+
+#reviews .reviews-slider-slick .rev-slide .rev-slide-text .rev-slide-works {
+  margin-top: 15px;
+  font-family: "TT Norms";
+  font-size: 18px;
+  font-weight: 800;
+  color: #000000;
+}
+
+#reviews .reviews-slider-slick .rev-slide .rev-slide-text .rev-slide-works span {
+  color: #e6540a;
+}
+
+#reviews .reviews-slider-slick .rev-slide .rev-slide-text .rev-slide-maintext {
+  margin-top: 30px;
+  color: #000000;
+  font-family: "TT Norms";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#reviews .reviews-slider-slick .rev-slide .rev-slide-text .rev-slide-proofs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+}
+
+#reviews .reviews-slider-slick .rev-slide .rev-slide-text .rev-slide-proofs .rev-proof {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 50px;
+}
+
+#reviews .reviews-slider-slick .rev-slide .rev-slide-text .rev-slide-proofs img {
+  display: inline-block;
+}
+
+#reviews .reviews-slider-slick .rev-slide .rev-slide-text .rev-slide-proofs .rev-slide-proofs-p {
+  padding-left: 20px;
+  display: inline-block;
+  color: #e6540a;
+  font-family: "TT Norms";
+  font-size: 16px;
+  font-weight: 800;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+#reviews .reviews-slider-slick .rev-slide .rev-slide-text .rev-slide-proofs span {
+  padding-left: 20px;
+  color: #9b9b9b;
+  font-family: "TT Norms";
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=reviews.css.map */

@@ -1,0 +1,64 @@
+@import "_fonts.scss";
+@import "_init.scss";
+
+#first-screen {
+  background:
+    url(../images/lists.png) no-repeat,
+    url(../images/orange-lines.png) no-repeat,
+    $bg-color;
+  background-size: 100%, 100%;
+  background-position: top center, top center;
+  #s-slider {
+    .slick-dots {
+      top: 521px;
+      right: 570px;
+      li button:before {
+        color: white;
+      }
+      li.slick-active button {
+        border: 2px solid white;
+        border-radius: 20px;
+      }
+    }
+    .container {
+      margin-top: 15px;
+      margin-bottom: 25px;
+
+    }
+    p {
+      position: absolute;
+      top: 87px;
+      width: 640px;
+      color: #ffffff;
+      font-size: 60px;
+      text-align: left;
+      text-transform: uppercase;
+      font-family: "TT Norms";
+      font-weight: 400;
+      span {
+        color: $orange-color;
+        font-weight: 700;
+      }
+    }
+    .g-btn {
+      position: absolute;
+      top: 358px;
+      width: 266px;
+      height: 53px;
+      border-radius: 25px;
+      span {
+        /* Style for "оставить з" */
+        color: #ffffff;
+        font-family: "TT Norms";
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+    img {
+      position: relative;
+      margin-left: auto;
+    }
+  }
+}

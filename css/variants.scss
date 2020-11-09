@@ -1,0 +1,109 @@
+@import "_fonts.scss";
+@import "_init.scss";
+
+#variants {
+  background-color: #fff;
+  #variants-maintext {
+    padding-top: 50px;
+    padding-bottom: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    .variants-maintext-name {
+      color: #000;
+      font-family: "TT Norms";
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 36px;
+      text-align: left;
+      text-transform: uppercase;
+    }
+    #variants-btns {
+      display: inline-block;
+      text-align: right;
+      div {
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 20px;
+        margin-left: 20px;
+        background-color: $grey-color;
+        span {
+          color: #000;
+          font-family: "TT Norms";
+          font-size: 14px;
+          font-weight: 400;
+          text-align: center;
+        }
+        &:hover {
+          background-color: #cfcfcf;
+        }
+        &:active {
+          background-color: $orange-color;
+          span {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  .variants-slider-slick {
+    p {
+      margin-top: 25px;
+      width: 260px;
+      color: #000000;
+      font-family: "TT Norms";
+      font-size: 24px;
+      font-weight: 500;
+      &:hover {
+        color: #e6540a;
+        cursor: pointer;
+      }
+    }
+    .varinats-price {
+      display: inline-block;
+      margin-top: 15px;
+      font-family: "TT Norms";
+      font-size: 36px;
+      font-weight: 800;
+      text-align: left;
+      &:hover {
+        color: #e6540a;
+        cursor: pointer;
+      }
+    }
+    .variants-more {
+      margin-top: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      span {
+        margin-right: 15px;
+        align-self: center;
+        color: #000;
+        font-family: "TT Norms";
+        font-size: 16px;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+      &:hover {
+        cursor: pointer;
+        span {
+          color: $orange-color;
+        }
+      }
+    }
+  }
+  .variants-watch-all {
+    text-align: right;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    color: #000000;
+    font-family: "TT Norms";
+    font-size: 30px;
+    font-weight: 800;
+    &:hover {
+      cursor: pointer;
+      color: $orange-color;
+    }
+  }
+}

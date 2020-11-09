@@ -1,0 +1,106 @@
+@import "_fonts.scss";
+@import "_init.scss";
+
+#first-screen {
+  #header {
+    height: 112px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    #h-logo {
+      user-select: none;
+    }
+    #h-nav {
+      width: 623px;
+      ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+          display: block;
+          display: inline-block;
+          font-weight: 400;
+          a {
+            font-family: "TT Norms";
+            color: white;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+          }
+          &::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: white;
+            transition: width .3s;
+          }
+          &:hover::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+    #h-line {
+      border-left: 1px solid $orange-color;
+      height: 34px;
+      user-select: none;
+    }
+    #h-contact {
+      a {
+        color: white;
+        font-weight: 400;
+        font-size: 18px;
+        span {
+          font-weight: 700;
+        }
+        &::after {
+          content: '';
+          display: block;
+          width: 0;
+          height: 2px;
+          background: white;
+          transition: width .3s;
+        }
+        &:hover::after {
+          width: 100%;
+        }
+      }
+    }
+    #h-call {
+      color: white;
+      div {
+        width: 146px;
+        height: 36px;
+        border-radius: 18px;
+        span {
+          font-family: "TT Norms";
+          font-size: 14px;
+          font-weight: 400;
+          font-style: normal;
+          letter-spacing: normal;
+          line-height: normal;
+          text-align: center;
+          font-style: normal;
+          letter-spacing: normal;
+          line-height: normal;
+        }
+      }
+    }
+    #h-menu {
+      color: white;
+      span {
+        font-weight: bold;
+        padding-right: 10px;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 62.62px;
+      }
+      &:hover {
+        cursor: pointer;
+        color: $grey-color;
+      }
+    }
+  }
+}
