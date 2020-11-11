@@ -34,9 +34,12 @@ a { text-decoration: none; }
 .hide {
   display: none;
 }
+.btn-active {
+  background-color: $orange-press !important;
+}
 
 body {
-  font: 100% $font-stack;
+  font: 100% $font-stack, sans-serif;
 }
 .container {
   max-width: 1380px;

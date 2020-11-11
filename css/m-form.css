@@ -1,0 +1,616 @@
+@font-face {
+  font-family: 'Futura PT Book';
+  src: url("FuturaPT-Book.woff2") format("woff2"), url("FuturaPT-Book.woff") format("woff"), url("FuturaPT-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Circe';
+  src: url("Circe-ExtraBold.woff2") format("woff2"), url("Circe-ExtraBold.woff") format("woff"), url("Circe-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Circe';
+  src: url("Circe-Regular.woff2") format("woff2"), url("Circe-Regular.woff") format("woff"), url("Circe-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("TTNorms-Black.woff2") format("woff2"), url("TTNorms-Black.woff") format("woff"), url("TTNorms-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("TTNorms-ExtraLight.woff2") format("woff2"), url("TTNorms-ExtraLight.woff") format("woff"), url("TTNorms-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("TTNorms-ExtraBold.woff2") format("woff2"), url("TTNorms-ExtraBold.woff") format("woff"), url("TTNorms-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("TTNorms-BlackItalic.woff2") format("woff2"), url("TTNorms-BlackItalic.woff") format("woff"), url("TTNorms-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("TTNorms-Bold.woff2") format("woff2"), url("TTNorms-Bold.woff") format("woff"), url("TTNorms-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("TTNorms-ExtraBoldItalic.woff2") format("woff2"), url("TTNorms-ExtraBoldItalic.woff") format("woff"), url("TTNorms-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("TTNorms-BoldItalic.woff2") format("woff2"), url("TTNorms-BoldItalic.woff") format("woff"), url("TTNorms-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("TTNorms-LightItalic.woff2") format("woff2"), url("TTNorms-LightItalic.woff") format("woff"), url("TTNorms-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("TTNorms-Heavy.woff2") format("woff2"), url("TTNorms-Heavy.woff") format("woff"), url("TTNorms-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("TTNorms-Italic.woff2") format("woff2"), url("TTNorms-Italic.woff") format("woff"), url("TTNorms-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("TTNorms-Light.woff2") format("woff2"), url("TTNorms-Light.woff") format("woff"), url("TTNorms-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("TTNorms-HeavyItalic.woff2") format("woff2"), url("TTNorms-HeavyItalic.woff") format("woff"), url("TTNorms-HeavyItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("TTNorms-ExtraLightItalic.woff2") format("woff2"), url("TTNorms-ExtraLightItalic.woff") format("woff"), url("TTNorms-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("TTNorms-Medium.woff2") format("woff2"), url("TTNorms-Medium.woff") format("woff"), url("TTNorms-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("TTNorms-MediumItalic.woff2") format("woff2"), url("TTNorms-MediumItalic.woff") format("woff"), url("TTNorms-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("TTNorms-Regular.woff2") format("woff2"), url("TTNorms-Regular.woff") format("woff"), url("TTNorms-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("TTNorms-Thin.woff2") format("woff2"), url("TTNorms-Thin.woff") format("woff"), url("TTNorms-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms';
+  src: url("TTNorms-ThinItalic.woff2") format("woff2"), url("TTNorms-ThinItalic.woff") format("woff"), url("TTNorms-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  outline: none;
+}
+
+html {
+  height: 101%;
+}
+
+/* always display scrollbars */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+strong {
+  font-weight: bold;
+}
+
+input {
+  outline: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hide {
+  display: none;
+}
+
+.btn-active {
+  background-color: #d14e0c !important;
+}
+
+body {
+  font: 100% TT Norms, sans-serif;
+}
+
+.container {
+  max-width: 1380px;
+  margin: 0px auto;
+}
+
+@media (max-width: 1450px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .container {
+    max-width: 100%;
+    padding: 0px 25px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    max-width: 100%;
+    padding: 0px 5px;
+  }
+}
+
+.g-btn {
+  background-color: #e6540a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.g-btn span {
+  color: white;
+}
+
+.g-btn:hover {
+  background-color: #da500c;
+  cursor: pointer;
+}
+
+.g-btn:active {
+  background-color: #d14e0c;
+}
+
+#modal-form {
+  display: none;
+  position: fixed;
+  top: 0px;
+  height: 100vh;
+  width: 100%;
+  background-color: #2b2b2b;
+  opacity: 0.97;
+  z-index: 99999;
+}
+
+#modal-form .m-container {
+  display: block;
+  padding-top: 150px;
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+@media (max-width: 1300px) {
+  #modal-form .m-container {
+    max-width: 100%;
+    padding: 0px 50px;
+    padding-top: 150px;
+  }
+}
+
+@media (max-width: 900px) {
+  #modal-form .m-container {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 500px) {
+  #modal-form .m-container {
+    padding: 0px 15px;
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 400px) {
+  #modal-form .m-container {
+    padding-top: 25px;
+  }
+}
+
+#modal-form .m-container .m-form-content .m-form-content-title {
+  color: #ffffff;
+  font-family: "TT Norms";
+  font-size: 60px;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1050px) {
+  #modal-form .m-container .m-form-content .m-form-content-title {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 750px) {
+  #modal-form .m-container .m-form-content .m-form-content-title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 400px) {
+  #modal-form .m-container .m-form-content .m-form-content-title {
+    font-size: 30px;
+  }
+}
+
+#modal-form .m-container .m-form-content .m-form-maintext {
+  max-width: 1150px;
+  padding-top: 50px;
+  padding-bottom: 64px;
+  color: #ffffff;
+  font-family: "TT Norms";
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1050px) {
+  #modal-form .m-container .m-form-content .m-form-maintext {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 750px) {
+  #modal-form .m-container .m-form-content .m-form-maintext {
+    font-size: 22px;
+    padding-bottom: 5px;
+  }
+}
+
+@media (max-width: 400px) {
+  #modal-form .m-container .m-form-content .m-form-maintext {
+    font-size: 18px;
+  }
+}
+
+#modal-form .m-container .m-form-content .m-form-maintext span {
+  font-weight: 700;
+  color: #e6540a;
+}
+
+#modal-form .m-container .m-form-content .m-form-form .m-form-input {
+  height: 37px;
+  width: 390px;
+  padding-left: 35px;
+  margin-right: 35px;
+  background-color: #2b2b2b;
+  border-bottom: 1px solid white;
+  color: white;
+  font-family: "TT Norms";
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 1;
+}
+
+@media (max-width: 1050px) {
+  #modal-form .m-container .m-form-content .m-form-form .m-form-input {
+    display: block;
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 470px) {
+  #modal-form .m-container .m-form-content .m-form-form .m-form-input {
+    width: 90%;
+  }
+}
+
+#modal-form .m-container .m-form-content .m-form-form button {
+  margin-left: 90px;
+  height: 37px;
+  display: inline-block;
+  border-radius: 20px;
+  padding: 0px 15px;
+}
+
+@media (max-width: 1305px) {
+  #modal-form .m-container .m-form-content .m-form-form button {
+    display: block;
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+}
+
+#modal-form .m-container .m-form-content .m-form-form button span {
+  color: #ffffff;
+  font-family: "TT Norms";
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+
+#modal-form .m-container .m-form-content .m-form-textafter {
+  margin-top: 25px;
+  width: 70%;
+  color: #ffffff;
+  font-family: "TT Norms";
+  font-size: 11px;
+  font-weight: 100;
+  line-height: 14.11px;
+  text-align: left;
+}
+
+@media (max-width: 1050px) {
+  #modal-form .m-container .m-form-content .m-form-textafter {
+    width: 90%;
+  }
+}
+
+@media (max-width: 750px) {
+  #modal-form .m-container .m-form-content .m-form-textafter {
+    font-size: 9px;
+    margin-top: 15px;
+    opacity: 0.3;
+  }
+}
+
+#modal-form .m-container .m-form-content .m-form-footer-contacts {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 750px) {
+  #modal-form .m-container .m-form-content .m-form-footer-contacts {
+    display: block;
+  }
+}
+
+#modal-form .m-container .m-form-content .m-form-footer-contacts .m-form-footer-contacts-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#modal-form .m-container .m-form-content .m-form-footer-contacts .m-form-footer-contacts-social .m-form-footer-contacts-social-item {
+  display: inline-block;
+}
+
+#modal-form .m-container .m-form-content .m-form-footer-contacts .m-form-footer-contacts-social .m-form-footer-contacts-social-item a {
+  margin-right: 60px;
+  color: #ffffff;
+  font-family: "TT Norms";
+  font-size: 16px;
+  font-weight: 300;
+  padding-right: 25px;
+  border-right: 1px solid white;
+}
+
+@media (max-width: 560px) {
+  #modal-form .m-container .m-form-content .m-form-footer-contacts .m-form-footer-contacts-social .m-form-footer-contacts-social-item a {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  #modal-form .m-container .m-form-content .m-form-footer-contacts .m-form-footer-contacts-social .m-form-footer-contacts-social-item a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 750px) {
+  #modal-form .m-container .m-form-content .m-form-footer-contacts .m-form-footer-contacts-tel {
+    display: block;
+    margin-top: 15px;
+  }
+}
+
+#modal-form .m-container .m-form-content .m-form-footer-contacts .m-form-footer-contacts-tel a {
+  color: #ffffff;
+  font-family: "TT Norms";
+  font-size: 24px;
+  font-weight: 400;
+}
+
+#modal-form .m-container .m-form-content .m-form-footer-contacts .m-form-footer-contacts-tel::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+#modal-form .m-container .m-form-content .m-form-footer-contacts .m-form-footer-contacts-tel:hover::after {
+  width: 100%;
+}
+
+#modal-form .m-container .m-form-content .m-form-footer-adress {
+  margin-top: 25px;
+  padding-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#modal-form .m-container .m-form-content .m-form-footer-adress .m-form-footer-adress-adress {
+  color: #ffffff;
+  font-family: "TT Norms";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media (max-width: 400px) {
+  #modal-form .m-container .m-form-content .m-form-footer-adress .m-form-footer-adress-adress {
+    font-size: 14px;
+  }
+}
+
+#modal-form .m-container .m-form-close-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#modal-form .m-container .m-form-close {
+  height: 100%;
+}
+
+#modal-form .m-container .m-form-close::before {
+  content: 'x';
+  color: #fff;
+  font-weight: 500;
+  font-size: 36px;
+  font-family: "TT Norms";
+}
+
+#modal-form .m-container .m-form-close::before:hover {
+  color: #e6540a;
+}
+
+#modal-form .m-container .m-form-close:hover {
+  cursor: pointer;
+}
+
+#modal-form .m-container .m-form-close:hover::before {
+  color: #e6540a;
+}
+/*# sourceMappingURL=m-form.css.map */

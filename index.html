@@ -13,12 +13,96 @@
   <link rel="stylesheet" href="css/reviews.css">
   <link rel="stylesheet" href="css/info.css">
   <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/m-form.css">
 
   <!-- slick css -->
   <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
 </head>
 <body>
+  <div id="modal-menu">
+    <div class="m-container">
+      <div class="m-menu-nav">
+        <ul>
+          <li><a href="#">о нас</a></li>
+          <li id="m-open-ul"><a href="#">создание сайтов</a>
+            <ul id="m-ul">
+              <li><a href="#">последние записи</a></li>
+              <li><a href="#">архив</a></li>
+              <li><a href="#">темы</a></li>
+              <li><a href="#">подписка</a></li>
+            </ul>
+          </li>
+          <li><a href="#">продвижение сайтов</a></li>
+          <li><a href="#">crm</a></li>
+          <li><a href="#">портфолио</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">Блог</a></li>
+        </ul>
+      </div>
+      <div class="m-menu-close">
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-form">
+    <div class="m-container">
+      <div class="m-form-close-wrap">
+        <div class="m-form-close">
+        </div>
+      </div>
+
+      <div class="m-form-content">
+        <div class="m-form-content-title">
+          Заказать звонок
+        </div>
+
+        <div class="m-content-mainform">
+          <p class="m-form-maintext">
+            в нашем уютном офисе или у вас в гостях, <span>мы готовы обсудить ваш проект и задачи</span>
+          </p>
+          <div class="m-form-form">
+            <form>
+              <input class="m-form-input" type="text" id="f-name" name="user_name" placeholder="Ваше имя">
+              <input class="m-form-input" type="text" id="f-phone" name="user_phone" placeholder="Номер телефона">
+              <button class="g-btn" type="submit"><span>Получить приглашение</span></button>
+            </form>
+          </div>
+          <div class="m-form-textafter">
+            Нажимая кнопку “Отправить”, вы даете свое согласие на обработку персональных данных, в соответствии с Федеральным законом от 22.07.2006г. 
+“О персональных данных”, на условиях и для целей определенных в пользовательском соглашении
+          </div>
+        </div>
+
+        <div class="m-form-footer">
+          <div class="m-form-footer-contacts">
+            <div class="m-form-footer-contacts-social">
+              <div class="m-form-footer-contacts-social-item">
+                <a href="#">facebook</a>
+              </div>
+              <div class="m-form-footer-contacts-social-item">
+                <a href="#">instagram</a>
+              </div>
+              <div class="m-form-footer-contacts-social-item">
+                <a href="#">e-mail</a>
+              </div>
+            </div>
+            <div class="m-form-footer-contacts-tel">
+              <a href="tel:+74212257581">(4212) 25-75-81</a>
+            </div>
+          </div>
+          <div class="m-form-footer-adress">
+            <div class="m-form-footer-adress-adress">
+              г. Хабаровск, ул. Карла Маркса, 144Г к2, офис 207
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
   <div id="first-screen">
     <div class="container">
       <header id="header">
@@ -39,9 +123,9 @@
           <a href="tel:+74212257581">(4212) <span>25-75-81</span></a>
         </div>
         <div id="h-call" class="h-item">
-          <div class="g-btn"><span>Заказать звонок</span></div>
+          <div class="g-btn form-btn"><span>Заказать звонок</span></div>
         </div>
-        <div id="h-menu" class="h-item">
+        <div id="h-menu" class="h-item menu-btn">
           <span>МЕНЮ</span>
           <img class="desktop" src="images/h-menu.png" alt="h-menu">
           <img class="mobile" src="images/mobile-burger.png" alt="h-menu">
@@ -57,7 +141,7 @@
               на 1С Битрикс <br>
               в Хабаровске</p>
             <img src="temp/slide.png" alt="slide">
-            <div class="g-btn"><span>оставить заявку</span></div>
+            <div class="g-btn form-btn"><span>оставить заявку</span></div>
           </div>
         </div>
         <div>
@@ -66,7 +150,7 @@
               на 1С Битрикс <br>
               в Хабаровске</p>
             <img src="temp/slide.png" alt="slide">
-            <div class="g-btn"><span>оставить заявку</span></div>
+            <div class="g-btn form-btn"><span>оставить заявку</span></div>
           </div>
         </div>
         <div>
@@ -75,7 +159,7 @@
               на 1С Битрикс <br>
               в Хабаровске</p>
             <img src="temp/slide.png" alt="slide">
-            <div class="g-btn"><span>оставить заявку</span></div>
+            <div class="g-btn form-btn"><span>оставить заявку</span></div>
           </div>
         </div>
         <div>
@@ -84,7 +168,7 @@
               на 1С Битрикс <br>
               в Хабаровске</p>
             <img src="temp/slide.png" alt="slide">
-            <div class="g-btn"><span>оставить заявку</span></div>
+            <div class="g-btn form-btn"><span>оставить заявку</span></div>
           </div>
         </div>
       </div>
@@ -234,7 +318,7 @@
         наши выполненные работы
       </span>
       <div id="done-btns">
-        <div class="g-btn"><span>Все проекты</span></div>
+        <div class="g-btn btn-active"><span>Все проекты</span></div>
         <div class="g-btn"><span>Визитки</span></div>
         <div class="g-btn"><span>Интернет-магазины</span></div>
         <div class="g-btn"><span>Лендинги</span></div>
@@ -330,7 +414,7 @@
         </span>
         <div id="variants-btns">
           <div class="g-btn"><span>Все проекты</span></div>
-          <div class="g-btn"><span>Визитки</span></div>
+          <div class="g-btn btn-active"><span>Визитки</span></div>
           <div class="g-btn"><span>Интернет-магазины</span></div>
           <div class="g-btn"><span>Лендинги</span></div>
         </div>
@@ -353,7 +437,7 @@
           <img class="var-slider-img" src="temp/variants2.png" alt="var1">
           <p>Заголовок проекта 
             в одну или две строчки</p>
-          <span class="varinats-price">25 000₽</span>
+          <span class="varinats-price var-price-sale">25 000₽</span>
           <a href="#">
             <div class="variants-more">
               <span>ПОДРОБНЕЕ</span>
@@ -583,7 +667,7 @@
           <img src="images/footer-logo.png" alt="footer-logo">
         </div>
         <div id="footer-call">
-          <div class="g-btn"><span>Заказать звонок</span></div>
+          <div class="g-btn form-btn"><span>Заказать звонок</span></div>
         </div>
         <nav id="footer-nav">
           <ul>
@@ -628,99 +712,9 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/slick/slick.min.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('.head-slider-slick').slick({
-        arrows: false,
-        dots: true,
-        autoplay: true,
-        autoplaySpeed: 3000,
-      });
-      $('.offer-slider-slick').slick({
-        arrows: false,
-        dots: false,
-        slidesToShow: 4,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        responsive: [
-          {
-            breakpoint: 1651,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 1,
-              infinite: true,
-              dots: true,
-            }
-          },
-          {
-            breakpoint: 1251,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
-              infinite: true,
-              dots: true,
-            }
-          },
-          {
-            breakpoint: 831,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              infinite: true,
-              dots: true,
-            }
-          },
-        ]
-      });
-      $('.variants-slider-slick').slick({
-        arrows: false,
-        dots: false,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        infinite: true,
-        responsive: [
-          {
-            breakpoint: 1451,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 1,
-              infinite: true,
-              dots: true,
-            }
-          },
-          {
-            breakpoint: 1120,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
-              infinite: true,
-              dots: true,
-            }
-          },
-          {
-            breakpoint: 751,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              infinite: true,
-              dots: true,
-            }
-          },
-        ]
-      });
-      $('.reviews-slider-slick').slick({
-        arrows: false,
-        dots: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        infinite: true,
-        autoplaySpeed: 4000,
-      });
-    });
-  </script>
+  <script type="text/javascript" src="js/slick-init.js"></script>
+  <script type="text/javascript" src="js/menu.js"></script>
+  <script type="text/javascript" src="js/form.js"></script>
 
 </body>
 </html>

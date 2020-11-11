@@ -34,6 +34,11 @@
       }
       display: inline-block;
       text-align: right;
+      .btn-active {
+        span {
+          color: #fff;
+        }
+      }
       div {
         display: inline-block;
         padding: 10px 20px;
@@ -83,8 +88,13 @@
       max-width: 335px;
     }
     .var-slider-img {
+      filter: grayscale(100%);
+      transition: 0.3s ease-out;
       @media (max-width: 400px) {
         width: 95%;
+      }
+      &:hover {
+        filter: grayscale(0%);
       }
     }
     p {
@@ -101,6 +111,9 @@
         color: #e6540a;
         cursor: pointer;
       }
+    }
+    .var-price-sale {
+      text-decoration: line-through;
     }
     .varinats-price {
       display: inline-block;
