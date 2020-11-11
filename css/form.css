@@ -232,6 +232,26 @@ body {
   margin: 0px auto;
 }
 
+@media (max-width: 1450px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .container {
+    max-width: 100%;
+    padding: 0px 25px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    max-width: 100%;
+    padding: 0px 5px;
+  }
+}
+
 .g-btn {
   background-color: #e6540a;
   display: -webkit-box;
@@ -282,9 +302,30 @@ body {
   color: #e6540a;
 }
 
+@media (max-width: 950px) {
+  #form .form-maintext {
+    font-size: 24px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
+@media (max-width: 500px) {
+  #form .form-maintext {
+    font-size: 18px;
+  }
+}
+
 #form .form-form {
   margin-left: 100px;
   padding-bottom: 65px;
+}
+
+@media (max-width: 1450px) {
+  #form .form-form {
+    padding-bottom: 40px;
+    margin-left: 0px;
+  }
 }
 
 #form .form-form .form-input {
@@ -301,6 +342,31 @@ body {
   opacity: 1;
 }
 
+@media (max-width: 1450px) {
+  #form .form-form .form-input {
+    width: 39%;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 950px) {
+  #form .form-form .form-input {
+    font-size: 24px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
+@media (max-width: 750px) {
+  #form .form-form .form-input {
+    display: block;
+    width: 80%;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
 #form .form-form button {
   margin-left: 90px;
   height: 37px;
@@ -309,11 +375,25 @@ body {
   padding: 0px 15px;
 }
 
+@media (max-width: 1450px) {
+  #form .form-form button {
+    margin: 0px auto;
+    margin-top: 25px;
+    display: block;
+  }
+}
+
 #form .form-form button span {
   color: #ffffff;
   font-family: "TT Norms";
   font-size: 14px;
   font-weight: 400;
   text-align: center;
+}
+
+@media (max-width: 1450px) {
+  #form .form-form button span {
+    font-size: 18px;
+  }
 }
 /*# sourceMappingURL=form.css.map */

@@ -7,11 +7,30 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 400px) {
+      height: 80px;
+    }
     #h-logo {
       user-select: none;
+      @media (max-width: 1450px) {
+        img {
+          width: 200px;
+        }
+      }
+      @media (max-width: 560px) {
+        img {
+          width: 120px;
+        }
+      }
     }
     #h-nav {
       width: 623px;
+      @media (max-width: 1450px) {
+        width: 580px;
+      }
+      @media (max-width:1250px) {
+        display: none;
+      }
       ul {
         display: flex;
         justify-content: space-between;
@@ -43,12 +62,30 @@
       }
     }
     #h-line {
+      @media (max-width: 1250px) {
+        display: none;
+      }
       border-left: 1px solid $orange-color;
       height: 34px;
       user-select: none;
     }
     #h-contact {
+      @media (max-width: 992px) {
+        margin-left: 15%;
+      }
+      @media (max-width: 560px) {
+        margin-left: 0px;
+      }
       a {
+        @media (max-width: 1250px) {
+          font-size: 24px;
+        }
+        @media (max-width: 560px) {
+          font-size: 18px;
+        }
+        @media (max-width: 400px) {
+          font-size: 16px;
+        }
         color: white;
         font-weight: 400;
         font-size: 18px;
@@ -69,12 +106,25 @@
       }
     }
     #h-call {
+      @media (max-width: 1250px) {
+        margin-left: 20%;
+      }
+      @media (max-width: 992px) {
+        display: none;
+      }
       color: white;
       div {
+        @media (max-width: 1250px) {
+          width: 186px;
+          height: 40px;
+        }
         width: 146px;
         height: 36px;
-        border-radius: 18px;
+        border-radius: 25px;
         span {
+          @media (max-width: 1250px) {
+            font-size: 18px;
+          }
           font-family: "TT Norms";
           font-size: 14px;
           font-weight: 400;
@@ -91,6 +141,12 @@
     #h-menu {
       color: white;
       span {
+        @media (max-width: 1250px) {
+          font-size: 24px;
+        }
+        @media (max-width: 720px) {
+          display: none;
+        }
         font-weight: bold;
         padding-right: 10px;
         font-weight: 800;
@@ -100,6 +156,18 @@
       &:hover {
         cursor: pointer;
         color: $grey-color;
+      }
+      .mobile {
+        display: none;
+        width: 40px;
+        @media (max-width: 720px) {
+          display: block;
+        }
+      }
+      .desktop {
+        @media (max-width: 720px) {
+          display: none;
+        }
       }
     }
   }

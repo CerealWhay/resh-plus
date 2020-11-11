@@ -6,7 +6,7 @@
     url(../images/lists.png) no-repeat,
     url(../images/orange-lines.png) no-repeat,
     $bg-color;
-  background-size: 100%, 100%;
+  background-size: cover, cover;
   background-position: top center, top center;
   #s-slider {
     .slick-dots {
@@ -19,13 +19,85 @@
         border: 2px solid white;
         border-radius: 20px;
       }
+      @media (max-width: 1450px) {
+        top: 450px;
+        right: 470px;
+      }
+      @media (max-width: 1250px) {
+        right: 320px;
+      }
+      @media (max-width: 975px) {
+        top: 300px;
+        right: 300px;
+      }
+      @media (max-width: 890px) {
+        right: 0px;
+        margin: 0px auto;
+        top: 350px;
+      }
+      @media (max-width: 750px) {
+        top: 530px;
+        height: 40px;
+      }
+      @media (max-width: 540px) {
+        top: 520px;
+      }
+      @media (max-width: 530px) {
+        top: 490px;
+      }
+      @media (max-width: 520px) {
+        top: 470px;
+      }
+      @media (max-width: 490px) {
+        top: 450px;
+      }
+      @media (max-width: 460px) {
+        top: 420px;
+      }
+      @media (max-width: 420px) {
+        top: 390px;
+      }
+      @media (max-width: 405px) {
+        top: 400px;
+      }
+      @media (max-width: 403px) {
+        top: 430px;
+      }
+      @media (max-width: 400px) {
+        top: 380px;
+      }
+      @media (max-width: 360px) {
+        top: 350px;
+      }
     }
     .container {
       margin-top: 15px;
       margin-bottom: 25px;
-
+      @media (max-width: 1250px) {
+        margin-bottom: 75px;
+      }
     }
     p {
+      @media (max-width: 1250px) {
+        font-size: 40px;
+        padding-left: 0.1%;
+      }
+      @media (max-width: 975px) {
+        top: 50px;
+      }
+      @media (max-width: 890px) {
+        top: 0px;
+      }
+      @media (max-width: 750px) {
+        position: relative;
+        width: 100%;
+      }
+      @media (max-width: 530px) {
+        font-size: 32px;
+      }
+      @media (max-width: 400px) {
+        font-size: 24px;
+      }
       position: absolute;
       top: 87px;
       width: 640px;
@@ -41,13 +113,27 @@
       }
     }
     .g-btn {
+      @media (max-width: 1250px) {
+        margin-left: 0.1%;
+      }
+      @media (max-width: 975px) {
+        top: 225px;
+      }
+      @media (max-width: 890px) {
+        top: 250px;
+      }
+      @media (max-width: 750px) {
+        position: relative;
+        top: 0px;
+        margin: 0px auto;
+        margin-top: 55px;
+      }
       position: absolute;
       top: 358px;
       width: 266px;
       height: 53px;
       border-radius: 25px;
       span {
-        /* Style for "оставить з" */
         color: #ffffff;
         font-family: "TT Norms";
         font-size: 18px;
@@ -59,6 +145,25 @@
     img {
       position: relative;
       margin-left: auto;
+      @media (max-width: 1450px) {
+        width: 700px;
+      }
+      @media (max-width:1250px) {
+        width: 600px;
+        margin-right: 0.1%;
+      }
+      @media (max-width: 975px) {
+        width: 500px;
+      }
+      @media (max-width: 890px) {
+        margin-top: 50px;
+        width: 400px;
+      }
+      @media (max-width: 750px) {
+        margin-right: auto;
+        margin-top: 25px;
+        width: 500px;
+      }
     }
   }
 }

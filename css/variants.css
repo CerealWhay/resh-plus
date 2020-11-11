@@ -232,6 +232,26 @@ body {
   margin: 0px auto;
 }
 
+@media (max-width: 1450px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .container {
+    max-width: 100%;
+    padding: 0px 25px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    max-width: 100%;
+    padding: 0px 5px;
+  }
+}
+
 .g-btn {
   background-color: #e6540a;
   display: -webkit-box;
@@ -279,6 +299,13 @@ body {
       align-content: center;
 }
 
+@media (max-width: 950px) {
+  #variants #variants-maintext {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
 #variants #variants-maintext .variants-maintext-name {
   color: #000;
   font-family: "TT Norms";
@@ -289,9 +316,27 @@ body {
   text-transform: uppercase;
 }
 
+@media (max-width: 950px) {
+  #variants #variants-maintext .variants-maintext-name {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 500px) {
+  #variants #variants-maintext .variants-maintext-name {
+    font-size: 18px;
+  }
+}
+
 #variants #variants-maintext #variants-btns {
   display: inline-block;
   text-align: right;
+}
+
+@media (max-width: 1230px) {
+  #variants #variants-maintext #variants-btns {
+    display: none;
+  }
 }
 
 #variants #variants-maintext #variants-btns div {
@@ -322,6 +367,40 @@ body {
   color: white;
 }
 
+#variants #variants-slider-id .slick-dots li button:before {
+  color: black;
+}
+
+#variants #variants-slider-id .slick-dots li.slick-active button {
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+@media (max-width: 1450px) {
+  #variants #variants-slider-id .slick-dots {
+    bottom: -70px;
+  }
+}
+
+@media (max-width: 1119px) {
+  #variants .variants-slider-slick {
+    max-width: 750px;
+    margin: 0px auto;
+  }
+}
+
+@media (max-width: 750px) {
+  #variants .variants-slider-slick {
+    max-width: 335px;
+  }
+}
+
+@media (max-width: 400px) {
+  #variants .variants-slider-slick .var-slider-img {
+    width: 95%;
+  }
+}
+
 #variants .variants-slider-slick p {
   margin-top: 25px;
   width: 260px;
@@ -329,6 +408,12 @@ body {
   font-family: "TT Norms";
   font-size: 24px;
   font-weight: 500;
+}
+
+@media (max-width: 400px) {
+  #variants .variants-slider-slick p {
+    font-size: 18px;
+  }
 }
 
 #variants .variants-slider-slick p:hover {
@@ -343,6 +428,12 @@ body {
   font-size: 36px;
   font-weight: 800;
   text-align: left;
+}
+
+@media (max-width: 400px) {
+  #variants .variants-slider-slick .varinats-price {
+    font-size: 30px;
+  }
 }
 
 #variants .variants-slider-slick .varinats-price:hover {
@@ -393,8 +484,67 @@ body {
   font-weight: 800;
 }
 
+@media (max-width: 950px) {
+  #variants .variants-watch-all p {
+    text-align: unset;
+    display: none;
+  }
+}
+
 #variants .variants-watch-all:hover {
   cursor: pointer;
   color: #e6540a;
+}
+
+#variants .variants-watch-all div {
+  display: none;
+  margin: 0px auto;
+}
+
+#variants .variants-watch-all div span {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media (max-width: 400px) {
+  #variants .variants-watch-all div span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 950px) {
+  #variants .variants-watch-all div {
+    margin: 0px auto;
+    width: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+  }
+}
+
+@media (max-width: 1450px) {
+  #variants .variants-watch-all {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 950px) {
+  #variants .variants-watch-all {
+    margin-top: 100px;
+    margin-bottom: 25px;
+  }
 }
 /*# sourceMappingURL=variants.css.map */

@@ -7,6 +7,14 @@
     grid-template-columns: auto 278px;
     column-gap: 80px;
     margin-bottom: 30px;
+    @media (max-width: 950px) {
+      font-size: 24px;
+      margin: 25px 0px;
+    }
+    @media (max-width: 750px) {
+      grid-template-columns: auto;
+      column-gap: 0px;
+    }
     #info-maintext {
       .info-maintext-name {
         margin: 50px 0px;
@@ -17,12 +25,23 @@
         line-height: 36px;
         text-align: left;
         text-transform: uppercase;
+        @media (max-width: 950px) {
+          font-size: 24px;
+          margin: 25px 0px;
+        }
+        @media (max-width: 500px) {
+          font-size: 18px;
+          margin: 5px 0px;
+        }
       }
       .info-maintext-text {
         color: #000000;
         font-size: 16px;
         font-weight: 500;
         font-family: "TT Norms";
+        @media (max-width: 400px) {
+          font-size: 14px;
+        }
         .info-maintext-text-span {
           padding: 25px 0px;
           text-transform: uppercase;
@@ -31,11 +50,14 @@
       }
     }
     .info-imgs {
+      margin: 0px auto;
       margin-top: 40px;
+      height: 325px;
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 135px 135px;
       grid-template-rows: repeat(7, auto);
       column-gap: 15px;
+      align-items: start;
       .g-item {
         margin-bottom: 10px;
       }

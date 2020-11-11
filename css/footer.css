@@ -232,6 +232,26 @@ body {
   margin: 0px auto;
 }
 
+@media (max-width: 1450px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .container {
+    max-width: 100%;
+    padding: 0px 25px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    max-width: 100%;
+    padding: 0px 5px;
+  }
+}
+
 .g-btn {
   background-color: #e6540a;
   display: -webkit-box;
@@ -272,11 +292,28 @@ body {
   display: grid;
   -ms-grid-columns: auto auto 1fr;
       grid-template-columns: auto auto 1fr;
-  -webkit-column-gap: 20px;
-          column-gap: 20px;
+  grid-gap: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 1280px) {
+  #footer .footer-main-info {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+  }
+}
+
+@media (max-width: 550px) {
+  #footer .footer-main-info {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+  }
 }
 
 #footer .footer-main-info #footer-logo {
@@ -286,9 +323,33 @@ body {
           user-select: none;
 }
 
+@media (max-width: 550px) {
+  #footer .footer-main-info #footer-logo {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+}
+
 #footer .footer-main-info #footer-call {
+  -ms-grid-column-align: end;
+      justify-self: end;
   color: white;
   margin-right: 100px;
+}
+
+@media (max-width: 1280px) {
+  #footer .footer-main-info #footer-call {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 550px) {
+  #footer .footer-main-info #footer-call {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
 }
 
 #footer .footer-main-info #footer-call div {
@@ -314,6 +375,18 @@ body {
   max-width: 882px;
 }
 
+@media (max-width: 1280px) {
+  #footer .footer-main-info #footer-nav {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 550px) {
+  #footer .footer-main-info #footer-nav {
+    grid-column: span 1;
+  }
+}
+
 #footer .footer-main-info #footer-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -323,9 +396,16 @@ body {
           justify-content: space-between;
 }
 
+@media (max-width: 730px) {
+  #footer .footer-main-info #footer-nav ul {
+    display: block;
+    width: 150px;
+    margin: 0px auto;
+  }
+}
+
 #footer .footer-main-info #footer-nav ul li {
   display: block;
-  display: inline-block;
   font-weight: 400;
 }
 
@@ -339,7 +419,16 @@ body {
   line-height: normal;
 }
 
-#footer .footer-main-info #footer-nav ul li::after {
+@media (max-width: 730px) {
+  #footer .footer-main-info #footer-nav ul li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+}
+
+#footer .footer-main-info #footer-nav ul li a::after {
   content: '';
   display: block;
   width: 0;
@@ -349,7 +438,7 @@ body {
   transition: width .3s;
 }
 
-#footer .footer-main-info #footer-nav ul li:hover::after {
+#footer .footer-main-info #footer-nav ul li a:hover::after {
   width: 100%;
 }
 
@@ -366,6 +455,13 @@ body {
           align-items: center;
 }
 
+@media (max-width: 760px) {
+  #footer .footer-contacts {
+    display: block;
+    width: 100%;
+  }
+}
+
 #footer .footer-contacts .footer-contacts-social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -373,6 +469,19 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 760px) {
+  #footer .footer-contacts .footer-contacts-social {
+    margin: 0px auto;
+    width: 500px;
+  }
+}
+
+@media (max-width: 550px) {
+  #footer .footer-contacts .footer-contacts-social {
+    width: 100%;
+  }
 }
 
 #footer .footer-contacts .footer-contacts-social .footer-contacts-social-item {
@@ -389,11 +498,30 @@ body {
   border-right: 1px solid white;
 }
 
+@media (max-width: 470px) {
+  #footer .footer-contacts .footer-contacts-social .footer-contacts-social-item a {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 760px) {
+  #footer .footer-contacts .footer-contacts-tel {
+    display: inline-block;
+    padding-top: 15px;
+  }
+}
+
 #footer .footer-contacts .footer-contacts-tel a {
   color: #ffffff;
   font-family: "TT Norms";
   font-size: 36px;
   font-weight: 400;
+}
+
+@media (max-width: 400px) {
+  #footer .footer-contacts .footer-contacts-tel a {
+    font-size: 24px;
+  }
 }
 
 #footer .footer-contacts .footer-contacts-tel::after {
@@ -425,12 +553,20 @@ body {
 }
 
 #footer .footer-adress .footer-adress-disclaimer {
+  width: 650px;
   opacity: 0.3;
   color: #ffffff;
   font-family: "TT Norms";
   font-size: 11px;
   font-weight: 400;
   line-height: 20.92px;
+  padding-right: 15px;
+}
+
+@media (max-width: 400px) {
+  #footer .footer-adress .footer-adress-disclaimer {
+    font-size: 10px;
+  }
 }
 
 #footer .footer-adress .footer-adress-adress {
@@ -438,5 +574,11 @@ body {
   font-family: "TT Norms";
   font-size: 18px;
   font-weight: 400;
+}
+
+@media (max-width: 400px) {
+  #footer .footer-adress .footer-adress-adress {
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=footer.css.map */

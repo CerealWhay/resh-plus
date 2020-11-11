@@ -11,13 +11,19 @@
 }
 
 #done-works {
+  overflow: hidden;
   background-color: $bg-color;
   #done-works-maintext {
+    overflow: hidden;
     padding-top: 50px;
     padding-bottom: 64px;
     display: flex;
     justify-content: space-between;
     align-content: center;
+    @media (max-width: 950px) {
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
     .done-works-maintext-name {
       color: #ffffff;
       font-family: "TT Norms";
@@ -26,8 +32,17 @@
       line-height: 36px;
       text-align: left;
       text-transform: uppercase;
+      @media (max-width: 950px) {
+        font-size: 24px;
+      }
+      @media (max-width: 500px) {
+        font-size: 18px;
+      }
     }
     #done-btns {
+      @media (max-width: 1230px) {
+        display: none;
+      }
       display: inline-block;
       text-align: right;
       div {
@@ -53,22 +68,29 @@
     }
   }
   #done-grid {
+    @media (max-width: 1230px) {
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr;
+      column-gap: 0px;
+    }
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr auto;
     column-gap: 15px;
     .done-left-top {
+      @media (max-width: 1230px) {
+        display: none;
+      }
       background-color: $orange-color;
       height: 483px;
       width: 100%;
+      background-size: cover;
       .done-left-top-img {
         overflow: hidden;
-        width: 100%;
         height: 326px;
         img {
-          min-height: 326px;
-          overflow: hidden;
-          width: 100%;
+          height: 326px;
+          transform: scale(1);
           animation-duration: 3s;
           animation-name: imgAnimation;
           animation-iteration-count: infinite;
@@ -77,11 +99,22 @@
       }
     }
     .done-right-top {
+      overflow: hidden;
       display: flex;
       justify-content: stretch;
+      @media (max-width: 1230px) {
+        margin: 0px auto;
+      }
+      .done-mobile-hide {
+        @media (max-width: 550px) {
+          display: none;
+        }
+      }
       .done-slide {
         height: 326px;
         width: 100%; 
+        background-position: center center;
+        background-repeat: no-repeat;
         .slide-hidden {
           display: inline-block;
           visibility: hidden;
@@ -98,10 +131,13 @@
             font-family: "TT Norms";
             font-size: 14px;
             font-weight: 400;
+            @media (max-width: 1380px) {
+              margin-bottom: 90px;
+            }
           }
           .done-right-top-slide-name {
             margin-bottom: 40px;
-            padding-left: 21px;
+            padding: 0px 21px;
             max-width: 220px;
             color: #ffffff;
             font-family: "TT Norms";
@@ -135,10 +171,20 @@
     .done-bot {
       grid-column: span 2;
       margin-top: -110px;
+      @media (max-width: 1230px) {
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
       .container {
         display: flex;
         justify-content: space-between;
         .done-bot-left {
+          @media (max-width: 1450px) {
+            grid-template-columns: 400px auto;
+          }
+          @media (max-width: 1230px) {
+            display: none;
+          }
           display: grid;
           grid-template-columns: 450px auto;
           grid-template-rows: 1fr 1fr;
@@ -176,6 +222,12 @@
               font-weight: 800;
               text-transform: uppercase;
             }
+            &:hover {
+              cursor: pointer;
+              span {
+                color: $grey-color;
+              }
+            }
           }
         }
         .done-bot-right {
@@ -187,8 +239,39 @@
             &:hover {
               cursor: pointer;
               color: $orange-color;
+              @media (max-width: 950px) {
+                color: white;
+              }
+            }
+            @media (max-width: 950px) {
+              font-size: 20px;
+              font-weight: 700;
+              text-transform: uppercase;
+            }
+            @media (max-width: 400px) {
+              font-size: 14px;
             }
           }
+          @media (max-width: 1230px) {
+            margin: 0px auto;
+          }
+          @media (max-width: 950px) {
+            background-color: $orange-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            user-select: none;
+            padding: 10px 25px;
+            border-radius: 25px;
+            &:hover {
+              background-color: $orange-hover;
+              cursor: pointer;
+            }
+            &:active {
+              background-color: $orange-press;
+            }
+          }
+          
         }
       }
     }
