@@ -165,6 +165,13 @@ body #content {
   background-color: rgba(0, 0, 0, 0.39);
 }
 
+@media (max-width: 425px) {
+  #our-offer #of-bg {
+    position: relative;
+    height: 110px;
+  }
+}
+
 #our-offer #of-bg p {
   padding-top: 46px;
   font-family: "TT Norms";
@@ -210,69 +217,6 @@ body #content {
   }
 }
 
-#our-offer #of-slider-mobile {
-  padding-top: 160px;
-  display: none;
-}
-
-@media (max-width: 425px) {
-  #our-offer #of-slider-mobile {
-    display: -ms-grid;
-    display: grid;
-    width: 100%;
-    -ms-grid-rows: (180px)[4];
-        grid-template-rows: repeat(4, 180px);
-    row-gap: 10px;
-  }
-}
-
-#our-offer #of-slider-mobile .of-slide-mobile {
-  height: 180px;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-#our-offer #of-slider-mobile .of-slide-mobile .of-slide-text-mobile {
-  position: relative;
-  bottom: 0px;
-  height: 60px;
-  background-color: white;
-  opacity: 0.9;
-  -webkit-transition: 0.3s ease-out;
-  transition: 0.3s ease-out;
-  padding-left: 47px;
-  overflow: hidden;
-}
-
-#our-offer #of-slider-mobile .of-slide-mobile .of-slide-text-mobile img {
-  display: inline;
-  padding-top: 13px;
-}
-
-#our-offer #of-slider-mobile .of-slide-mobile .of-slide-text-mobile span {
-  padding-left: 18px;
-  color: #000000;
-  font-family: "TT Norms";
-  font-size: 16px;
-  font-weight: 400;
-  text-align: left;
-}
-
-#our-offer #of-slider-mobile .of-slide-mobile .of-slide-text-mobile p {
-  overflow: hidden;
-  color: #000000;
-  font-family: "TT Norms";
-  font-size: 10px;
-  font-weight: 400;
-  text-align: left;
-  margin-top: 10px;
-  width: 80%;
-}
-
-#our-offer #of-slider-mobile .of-slide-mobile .of-slide-text-mobile:hover {
-  height: 125px;
-}
-
 #our-offer #of-slider {
   padding-top: 155px;
   margin: 0px auto;
@@ -280,7 +224,17 @@ body #content {
 
 @media (max-width: 425px) {
   #our-offer #of-slider {
-    display: none;
+    padding-top: 0px;
+  }
+}
+
+@media (max-width: 425px) {
+  #our-offer #of-slider .of-slider-grid {
+    z-index: 9999;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (180px)[auto-fill];
+        grid-template-rows: repeat(auto-fill, 180px);
   }
 }
 
@@ -288,6 +242,15 @@ body #content {
   height: 269px;
   margin-right: 10px;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 425px) {
+  #our-offer #of-slider .of-slide {
+    margin-right: 0px;
+    background-size: cover;
+    height: 180px;
+    position: relative;
+  }
 }
 
 #our-offer #of-slider .of-slide .of-slide-text {
@@ -302,9 +265,26 @@ body #content {
   padding-left: 47px;
 }
 
+@media (max-width: 425px) {
+  #our-offer #of-slider .of-slide .of-slide-text {
+    overflow: hidden;
+    padding-left: 10px;
+    width: 260px;
+    height: 55px;
+  }
+}
+
 #our-offer #of-slider .of-slide .of-slide-text img {
   display: inline;
   padding-top: 23px;
+}
+
+@media (max-width: 425px) {
+  #our-offer #of-slider .of-slide .of-slide-text img {
+    width: 20px;
+    height: auto;
+    padding-top: 0px;
+  }
 }
 
 #our-offer #of-slider .of-slide .of-slide-text span {
@@ -316,6 +296,13 @@ body #content {
   text-align: left;
 }
 
+@media (max-width: 425px) {
+  #our-offer #of-slider .of-slide .of-slide-text span {
+    font-size: 16px;
+    padding-left: 10px;
+  }
+}
+
 #our-offer #of-slider .of-slide .of-slide-text p {
   color: #000000;
   font-family: "TT Norms";
@@ -325,8 +312,21 @@ body #content {
   margin-top: 25px;
 }
 
+@media (max-width: 425px) {
+  #our-offer #of-slider .of-slide .of-slide-text p {
+    font-size: 10px;
+    margin-top: 10px;
+  }
+}
+
 #our-offer #of-slider .of-slide:hover .of-slide-text {
   height: 165px;
+}
+
+@media (max-width: 425px) {
+  #our-offer #of-slider .of-slide:hover .of-slide-text {
+    height: 125px;
+  }
 }
 
 @media (max-width: 1650px) {
@@ -334,10 +334,10 @@ body #content {
     max-width: 1378px;
   }
   #our-offer .of-container {
-    max-width: 98%;
+    max-width: 99%;
   }
   #our-offer .of-container #of-bg {
-    width: 98%;
+    width: 99%;
   }
 }
 
@@ -350,12 +350,6 @@ body #content {
 @media (max-width: 830px) {
   #our-offer #of-slider {
     max-width: 460px;
-  }
-}
-
-@media (max-width: 425px) {
-  #our-offer .of-container #of-bg {
-    background-color: rgba(0, 0, 0, 0);
   }
 }
 /*# sourceMappingURL=offer.css.map */

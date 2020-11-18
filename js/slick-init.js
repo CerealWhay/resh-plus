@@ -41,6 +41,10 @@ $(document).ready(function(){
           dots: true,
         }
       },
+      {
+        breakpoint: 426,
+        settings: "unslick",
+      },
     ]
   });
   $('.done-slider-slick').slick({
