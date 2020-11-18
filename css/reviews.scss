@@ -3,6 +3,9 @@
 #reviews {
   min-height: 520px;
   background-color: $grey-color;
+  @media (max-width: 620px) {
+    background-color: #2b2b2b;
+  }
   .slick-dots {
     bottom: 10px;
     li button:before {
@@ -15,6 +18,12 @@
     @media (max-width: 620px) {
       top: 150px;
       height: 40px;
+      li.slick-active button {
+        border: 2px solid white;
+      }
+      li button:before {
+        color: white;
+      }
     }
   }
   .reviews-maintext {
@@ -31,6 +40,9 @@
     @media (max-width: 950px) {
       padding-top: 25px;
       padding-bottom: 25px;
+    }
+    @media (max-width: 620px) {
+      color: #fff;
     }
     span {
       font-size: 24px;
@@ -83,6 +95,9 @@
           span {
             font-size: 16px;
           }
+          @media (max-width: 620px) {
+            color: #fff;
+          }
           @media (max-width: 440px) {
             font-size: 18px;
           }
@@ -105,6 +120,9 @@
               }
             }
           }
+          @media (max-width: 620px) {
+            color: #fff;
+          }
           @media (max-width: 440px) {
             font-size: 16px;
           }
@@ -118,6 +136,9 @@
           font-family: "TT Norms";
           font-size: 18px;
           font-weight: 400;
+          @media (max-width: 620px) {
+            color: #fff;
+          }
           @media (max-width: 440px) {
             font-size: 14px;
           }
