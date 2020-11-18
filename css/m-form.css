@@ -97,7 +97,7 @@ body #content {
 @media (max-width: 400px) {
   .container {
     max-width: 100%;
-    padding: 0px 5px;
+    padding: 0px 15px;
   }
 }
 
@@ -328,8 +328,8 @@ body #content {
 
 #modal-form .m-container .m-form-content .m-form-form button span {
   color: #ffffff;
-  font-family: "TT Norms";
-  font-size: 14px;
+  font-family: "Futura PT Book";
+  font-size: 16px;
   font-weight: 400;
   text-align: center;
 }

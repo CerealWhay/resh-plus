@@ -83,6 +83,8 @@
       }
       .rev-slide-text {
         padding-top: 45px;
+        display: grid;
+        grid-template-rows: auto auto auto auto;
         @media (max-width: 950px) {
           padding-top: 0px;
         }
@@ -138,15 +140,27 @@
           font-weight: 400;
           @media (max-width: 620px) {
             color: #fff;
+            grid-row: 4;
+            margin-bottom: 40px;
           }
           @media (max-width: 440px) {
             font-size: 14px;
+          }
+          @media (max-width: 400px) {
+            line-height: 14px;
+          }
+          @media (max-width: 330px) {
+            width: 290px;
           }
         }
         .rev-slide-proofs {
           display: flex;
           margin-top: 25px;
           margin-bottom: 45px;
+          @media (max-width: 620px) {
+            grid-row: 3;
+            margin-bottom: 0px;
+          }
           .rev-proof {
             padding-right: 50px;
             a {

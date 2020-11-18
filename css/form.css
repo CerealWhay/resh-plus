@@ -97,7 +97,7 @@ body #content {
 @media (max-width: 400px) {
   .container {
     max-width: 100%;
-    padding: 0px 5px;
+    padding: 0px 15px;
   }
 }
 
@@ -138,7 +138,6 @@ body #content {
 }
 
 #form .form-error {
-  display: none;
   padding-left: 25px;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -282,7 +281,7 @@ body #content {
 
 #form .form-form button span {
   color: #ffffff;
-  font-family: "TT Norms";
+  font-family: "Futura PT Book";
   font-size: 14px;
   font-weight: 400;
   text-align: center;

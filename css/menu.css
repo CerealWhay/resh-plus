@@ -97,7 +97,7 @@ body #content {
 @media (max-width: 400px) {
   .container {
     max-width: 100%;
-    padding: 0px 5px;
+    padding: 0px 15px;
   }
 }
 

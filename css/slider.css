@@ -97,7 +97,7 @@ body #content {
 @media (max-width: 400px) {
   .container {
     max-width: 100%;
-    padding: 0px 5px;
+    padding: 0px 15px;
   }
 }
 
@@ -224,6 +224,12 @@ body #content {
   }
 }
 
+@media (max-width: 415px) {
+  #first-screen #s-slider .slick-dots {
+    top: 400px;
+  }
+}
+
 @media (max-width: 405px) {
   #first-screen #s-slider .slick-dots {
     top: 400px;
@@ -238,13 +244,13 @@ body #content {
 
 @media (max-width: 400px) {
   #first-screen #s-slider .slick-dots {
-    top: 380px;
+    top: 370px;
   }
 }
 
 @media (max-width: 360px) {
   #first-screen #s-slider .slick-dots {
-    top: 350px;
+    top: 330px;
   }
 }
 
