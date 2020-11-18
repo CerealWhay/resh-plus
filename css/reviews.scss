@@ -98,6 +98,12 @@
           color: #000000;
           span {
             color: #e6540a;
+            a {
+              color: #e6540a;
+              &:hover {
+                color: $orange-press;
+              }
+            }
           }
           @media (max-width: 440px) {
             font-size: 16px;
@@ -121,9 +127,16 @@
           margin-top: 25px;
           margin-bottom: 45px;
           .rev-proof {
-            display: flex;
-            align-items: center;
-            margin-right: 50px;
+            padding-right: 50px;
+            a {
+              display: flex;
+              align-items: center;
+              &:hover {
+                .rev-slide-proofs-p {
+                  color: $orange-press;
+                }
+              }
+            }
           }
           img {
             display: inline-block;

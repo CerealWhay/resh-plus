@@ -7,11 +7,6 @@
   outline: none;
 }
 
-html {
-  height: 101%;
-}
-
-/* always display scrollbars */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
@@ -51,16 +46,34 @@ a {
   text-decoration: none;
 }
 
-.hide {
-  display: none;
+.hidden {
+  display: none !important;
 }
 
 .btn-active {
   background-color: #d14e0c !important;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   font: 100% TT Norms, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body #content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
 .container {
@@ -89,7 +102,7 @@ body {
 }
 
 .g-btn {
-  background-color: #e6540a;
+  background-color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,6 +116,8 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 
 .g-btn span {
@@ -110,7 +125,7 @@ body {
 }
 
 .g-btn:hover {
-  background-color: #da500c;
+  background-color: #e6540a;
   cursor: pointer;
 }
 
@@ -166,6 +181,38 @@ body {
   #modal-menu .m-container {
     padding-top: 25px;
   }
+}
+
+#modal-menu .m-container .m-menu-nav ul .m-open-ul::after {
+  display: inline-block;
+  vertical-align: top;
+  font-family: "Font Awesome 5 Free";
+  content: "\f105";
+  font-weight: 700;
+  font-size: 42px;
+  color: #e6540a;
+  margin-left: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@media (max-width: 610px) {
+  #modal-menu .m-container .m-menu-nav ul .m-open-ul::after {
+    font-size: 36px;
+    vertical-align: sub;
+  }
+}
+
+@media (max-width: 400px) {
+  #modal-menu .m-container .m-menu-nav ul .m-open-ul::after {
+    font-size: 22px;
+    vertical-align: middle;
+  }
+}
+
+#modal-menu .m-container .m-menu-nav ul .m-a-is-active::after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 #modal-menu .m-container .m-menu-nav ul li #m-ul {
@@ -236,34 +283,34 @@ body {
 }
 
 #modal-menu .m-container .m-menu-nav ul li::before {
-  content: ">";
+  vertical-align: text-bottom;
+  content: "|";
   font-size: 36px;
   font-weight: 400;
   color: #e6540a;
   padding-right: 10px;
 }
 
+@media (max-width: 610px) {
+  #modal-menu .m-container .m-menu-nav ul li::before {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 400px) {
+  #modal-menu .m-container .m-menu-nav ul li::before {
+    font-size: 22px;
+  }
+}
+
 #modal-menu .m-container .m-menu-close {
   height: 100%;
-}
-
-#modal-menu .m-container .m-menu-close::before {
-  content: 'x';
-  color: #fff;
-  font-weight: 500;
-  font-size: 36px;
-  font-family: "TT Norms";
-}
-
-#modal-menu .m-container .m-menu-close::before:hover {
-  color: #e6540a;
+  font-size: 34px;
+  color: white;
 }
 
 #modal-menu .m-container .m-menu-close:hover {
-  cursor: pointer;
-}
-
-#modal-menu .m-container .m-menu-close:hover::before {
   color: #e6540a;
+  cursor: pointer;
 }
 /*# sourceMappingURL=menu.css.map */

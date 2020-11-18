@@ -10,12 +10,10 @@
 // CONSTS
 $font-stack: TT Norms;
 $orange-color: #e6540a;
-$orange-hover: #da500c;
+$orange-hover: #e6540a;
 $orange-press: #d14e0c;
 $bg-color: #2b2b2b;
 $grey-color: #efefef;
-
-html { height: 101%; } /* always display scrollbars */
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 ol, ul { list-style: none; }
@@ -31,15 +29,25 @@ img { border: 0; max-width: 100%; }
 
 a { text-decoration: none; }
 
-.hide {
-  display: none;
+.hidden {
+  display: none !important;
 }
 .btn-active {
   background-color: $orange-press !important;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   font: 100% $font-stack, sans-serif;
+  display: flex;
+  flex-direction: column;
+  #content {
+    flex: 1 0 auto;
+  }
 }
 .container {
   max-width: 1380px;
@@ -59,11 +67,12 @@ body {
 
 // BTN
 .g-btn {
-  background-color: $orange-color;
+  background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
   user-select: none;
+  transition: 0.1s;
   span {
     color: white;
   }

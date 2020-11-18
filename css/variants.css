@@ -7,11 +7,6 @@
   outline: none;
 }
 
-html {
-  height: 101%;
-}
-
-/* always display scrollbars */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
@@ -51,16 +46,34 @@ a {
   text-decoration: none;
 }
 
-.hide {
-  display: none;
+.hidden {
+  display: none !important;
 }
 
 .btn-active {
   background-color: #d14e0c !important;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   font: 100% TT Norms, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body #content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
 .container {
@@ -89,7 +102,7 @@ body {
 }
 
 .g-btn {
-  background-color: #e6540a;
+  background-color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,6 +116,8 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 
 .g-btn span {
@@ -110,7 +125,7 @@ body {
 }
 
 .g-btn:hover {
-  background-color: #da500c;
+  background-color: #e6540a;
   cursor: pointer;
 }
 
@@ -248,11 +263,6 @@ body {
   }
 }
 
-#variants .variants-slider-slick .var-slider-img:hover {
-  -webkit-filter: grayscale(0%);
-          filter: grayscale(0%);
-}
-
 #variants .variants-slider-slick p {
   margin-top: 25px;
   width: 260px;
@@ -268,19 +278,11 @@ body {
   }
 }
 
-#variants .variants-slider-slick p:hover {
-  color: #e6540a;
-  cursor: pointer;
-}
-
-#variants .variants-slider-slick .var-price-sale {
-  text-decoration: line-through;
-}
-
 #variants .variants-slider-slick .varinats-price {
   display: inline-block;
   margin-top: 15px;
   font-family: "TT Norms";
+  color: #000;
   font-size: 36px;
   font-weight: 800;
   text-align: left;
@@ -292,9 +294,14 @@ body {
   }
 }
 
-#variants .variants-slider-slick .varinats-price:hover {
+#variants .variants-slider-slick .var-price-sale {
+  text-decoration: line-through;
+  font-size: 32px;
+}
+
+#variants .variants-slider-slick .alt {
   color: #e6540a;
-  cursor: pointer;
+  padding-left: 15px;
 }
 
 #variants .variants-slider-slick .variants-more {
@@ -322,17 +329,45 @@ body {
   text-transform: uppercase;
 }
 
-#variants .variants-slider-slick .variants-more:hover {
+#variants .variants-slider-slick .variants-more img {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#variants .variants-slider-slick .var-slider-slide:hover .var-slider-img {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+#variants .variants-slider-slick .var-slider-slide:hover p {
+  color: #e6540a;
   cursor: pointer;
 }
 
-#variants .variants-slider-slick .variants-more:hover span {
+#variants .variants-slider-slick .var-slider-slide:hover .varinats-price {
+  color: #e6540a;
+  cursor: pointer;
+}
+
+#variants .variants-slider-slick .var-slider-slide:hover .var-price-sale {
+  color: black;
+}
+
+#variants .variants-slider-slick .var-slider-slide:hover .variants-more {
+  cursor: pointer;
+}
+
+#variants .variants-slider-slick .var-slider-slide:hover .variants-more img {
+  padding-left: 15px;
+}
+
+#variants .variants-slider-slick .var-slider-slide:hover .variants-more span {
   color: #e6540a;
 }
 
 #variants .variants-watch-all {
   text-align: right;
-  margin-top: 50px;
+  padding-top: 50px;
   margin-bottom: 60px;
   color: #000000;
   font-family: "TT Norms";

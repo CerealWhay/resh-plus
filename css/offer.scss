@@ -142,7 +142,9 @@
           text-align: left;
           margin-top: 25px;
         }
-        &:hover {
+      }
+      &:hover {
+        .of-slide-text {
           height: 165px;
         }
       }

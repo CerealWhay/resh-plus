@@ -7,9 +7,11 @@ $(document).ready(function(){
   });
   $('.offer-slider-slick').slick({
     arrows: false,
-    dots: false,
+    dots: true,
     slidesToShow: 4,
+    slidesToScroll: 1,
     autoplay: true,
+    infinite: true,
     autoplaySpeed: 2000,
     responsive: [
       {
@@ -41,6 +43,14 @@ $(document).ready(function(){
       },
     ]
   });
+  $('.done-slider-slick').slick({
+    arrows: false,
+    dots: true,
+    centerMode: true,
+    centerPadding: '15px',
+    slidesToShow: 1,
+    infinite: true,
+  }),
   $('.variants-slider-slick').slick({
     arrows: false,
     dots: false,

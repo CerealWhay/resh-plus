@@ -64,7 +64,6 @@
     }
   }
   #variants-slider-id {
-    
     .slick-dots {
       li button:before {
         color: black;
@@ -92,9 +91,6 @@
       @media (max-width: 400px) {
         width: 95%;
       }
-      &:hover {
-        filter: grayscale(0%);
-      }
     }
     p {
       margin-top: 25px;
@@ -106,28 +102,26 @@
       @media (max-width: 400px) {
         font-size: 18px;
       }
-      &:hover {
-        color: #e6540a;
-        cursor: pointer;
-      }
-    }
-    .var-price-sale {
-      text-decoration: line-through;
     }
     .varinats-price {
       display: inline-block;
       margin-top: 15px;
       font-family: "TT Norms";
+      color: #000;
       font-size: 36px;
       font-weight: 800;
       text-align: left;
       @media (max-width: 400px) {
         font-size: 30px;
       }
-      &:hover {
-        color: #e6540a;
-        cursor: pointer;
-      }
+    }
+    .var-price-sale {
+      text-decoration: line-through;
+      font-size: 32px;
+    }
+    .alt {
+      color: $orange-color;
+      padding-left: 15px;
     }
     .variants-more {
       margin-top: 25px;
@@ -143,17 +137,41 @@
         font-weight: 800;
         text-transform: uppercase;
       }
+      img {
+        transition: 0.3s;
+      }
+    }
+    .var-slider-slide {
       &:hover {
-        cursor: pointer;
-        span {
-          color: $orange-color;
+        .var-slider-img {
+          filter: grayscale(0%);
+        }
+        p {
+          color: #e6540a;
+          cursor: pointer;
+        }
+        .varinats-price {
+          color: #e6540a;
+          cursor: pointer;
+        }
+        .var-price-sale {
+          color: black;
+        }
+        .variants-more {
+          cursor: pointer;
+          img {
+            padding-left: 15px;
+          }
+          span {
+            color: $orange-color;
+          }
         }
       }
     }
   }
   .variants-watch-all {
     text-align: right;
-    margin-top: 50px;
+    padding-top: 50px;
     margin-bottom: 60px;
     color: #000000;
     font-family: "TT Norms";

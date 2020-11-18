@@ -7,11 +7,6 @@
   outline: none;
 }
 
-html {
-  height: 101%;
-}
-
-/* always display scrollbars */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
@@ -51,16 +46,34 @@ a {
   text-decoration: none;
 }
 
-.hide {
-  display: none;
+.hidden {
+  display: none !important;
 }
 
 .btn-active {
   background-color: #d14e0c !important;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   font: 100% TT Norms, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body #content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
 .container {
@@ -89,7 +102,7 @@ body {
 }
 
 .g-btn {
-  background-color: #e6540a;
+  background-color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,6 +116,8 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 
 .g-btn span {
@@ -110,7 +125,7 @@ body {
 }
 
 .g-btn:hover {
-  background-color: #da500c;
+  background-color: #e6540a;
   cursor: pointer;
 }
 
@@ -170,6 +185,7 @@ body {
   font-weight: 700;
   text-align: left;
   text-transform: uppercase;
+  margin-right: 30px;
 }
 
 @media (max-width: 1050px) {
@@ -193,7 +209,7 @@ body {
 #modal-form .m-container .m-form-content .m-form-maintext {
   max-width: 1150px;
   padding-top: 50px;
-  padding-bottom: 64px;
+  padding-bottom: 32px;
   color: #ffffff;
   font-family: "TT Norms";
   font-size: 36px;
@@ -227,6 +243,40 @@ body {
   color: #e6540a;
 }
 
+#modal-form .m-container .m-form-content .m-form-error {
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 32px;
+  background-color: #e6540a;
+  color: white;
+  font-family: "TT Norms";
+  font-size: 24px;
+  font-weight: 400;
+}
+
+#modal-form .m-container .m-form-content .m-form-error span {
+  font-size: 18px;
+}
+
+@media (max-width: 950px) {
+  #modal-form .m-container .m-form-content .m-form-error {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 500px) {
+  #modal-form .m-container .m-form-content .m-form-error {
+    font-size: 18px;
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  #modal-form .m-container .m-form-content .m-form-error span {
+    font-size: 14px;
+  }
+}
+
 #modal-form .m-container .m-form-content .m-form-form .m-form-input {
   height: 37px;
   width: 390px;
@@ -253,6 +303,11 @@ body {
   #modal-form .m-container .m-form-content .m-form-form .m-form-input {
     width: 90%;
   }
+}
+
+#modal-form .m-container .m-form-content .m-form-form .input-error {
+  border-bottom: 1px solid red;
+  color: red;
 }
 
 #modal-form .m-container .m-form-content .m-form-form button {
@@ -288,6 +343,11 @@ body {
   font-weight: 100;
   line-height: 14.11px;
   text-align: left;
+}
+
+#modal-form .m-container .m-form-content .m-form-textafter a {
+  color: white;
+  font-weight: 600;
 }
 
 @media (max-width: 1050px) {
@@ -334,28 +394,49 @@ body {
 
 #modal-form .m-container .m-form-content .m-form-footer-contacts .m-form-footer-contacts-social .m-form-footer-contacts-social-item {
   display: inline-block;
-}
-
-#modal-form .m-container .m-form-content .m-form-footer-contacts .m-form-footer-contacts-social .m-form-footer-contacts-social-item a {
-  margin-right: 60px;
-  color: #ffffff;
-  font-family: "TT Norms";
-  font-size: 16px;
-  font-weight: 300;
+  height: 21px;
   padding-right: 25px;
+  margin-right: 15px;
   border-right: 1px solid white;
 }
 
+#modal-form .m-container .m-form-content .m-form-footer-contacts .m-form-footer-contacts-social .m-form-footer-contacts-social-item:last-child {
+  margin-right: 15px;
+  padding-right: 0px;
+  border-right: 1px solid rgba(255, 255, 255, 0);
+}
+
 @media (max-width: 560px) {
-  #modal-form .m-container .m-form-content .m-form-footer-contacts .m-form-footer-contacts-social .m-form-footer-contacts-social-item a {
+  #modal-form .m-container .m-form-content .m-form-footer-contacts .m-form-footer-contacts-social .m-form-footer-contacts-social-item {
     margin-right: 10px;
   }
 }
 
 @media (max-width: 400px) {
-  #modal-form .m-container .m-form-content .m-form-footer-contacts .m-form-footer-contacts-social .m-form-footer-contacts-social-item a {
+  #modal-form .m-container .m-form-content .m-form-footer-contacts .m-form-footer-contacts-social .m-form-footer-contacts-social-item {
     font-size: 14px;
   }
+}
+
+#modal-form .m-container .m-form-content .m-form-footer-contacts .m-form-footer-contacts-social .m-form-footer-contacts-social-item a {
+  color: #ffffff;
+  font-family: "TT Norms";
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#modal-form .m-container .m-form-content .m-form-footer-contacts .m-form-footer-contacts-social .m-form-footer-contacts-social-item a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+#modal-form .m-container .m-form-content .m-form-footer-contacts .m-form-footer-contacts-social .m-form-footer-contacts-social-item a:hover::after {
+  width: 100%;
 }
 
 @media (max-width: 750px) {
@@ -423,26 +504,14 @@ body {
 }
 
 #modal-form .m-container .m-form-close {
+  position: absolute;
   height: 100%;
+  font-size: 34px;
+  color: white;
 }
 
-#modal-form .m-container .m-form-close::before {
-  content: 'x';
-  color: #fff;
-  font-weight: 500;
-  font-size: 36px;
-  font-family: "TT Norms";
-}
-
-#modal-form .m-container .m-form-close::before:hover {
+#modal-form .m-container .m-form-close i:hover {
   color: #e6540a;
-}
-
-#modal-form .m-container .m-form-close:hover {
   cursor: pointer;
-}
-
-#modal-form .m-container .m-form-close:hover::before {
-  color: #e6540a;
 }
 /*# sourceMappingURL=m-form.css.map */

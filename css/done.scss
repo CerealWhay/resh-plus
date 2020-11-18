@@ -1,14 +1,5 @@
 @import "_init.scss";
 
-@keyframes imgAnimation {
-  from {
-  }
-
-  to {
-    transform: scale(1.1);
-  }
-}
-
 #done-works {
   overflow: hidden;
   background-color: $bg-color;
@@ -58,12 +49,127 @@
           text-align: center;
         }
         &:hover {
-          background-color: rgba(0, 0, 0, 0.6);
+          background-color: rgb(104, 104, 104);
         }
         &:active {
           background-color: $orange-color;
         }
       }
+    }
+  }
+  .done-slider-mobile {
+    display: none;
+    margin-bottom: 30px;
+    @media (max-width: 820px) {
+      display: block;
+    }
+    .slick-dots {
+      bottom: -35px;
+      li button:before {
+        color: white;
+      }
+      li.slick-active button {
+        border: 2px solid white;
+        border-radius: 20px;
+      }
+    }
+    .done-slide {
+      margin: 0px auto;
+      height: 326px;
+      width: 315px; 
+      background-position: center center;
+      background-repeat: no-repeat; 
+      @media (max-width: 370px) {
+        width: 260px;
+      }
+      .slide-hidden {
+        display: inline-block;
+        visibility: hidden;
+        width: 100%;
+        height: 100%;
+        transition: 0.3s;
+        opacity: 0;
+        .done-right-top-slide-site {
+          text-align: right;
+          margin-right: 60px;
+          margin-top: 25px;
+          margin-bottom: 110px;
+          color: #ffffff;
+          font-family: "TT Norms";
+          font-size: 14px;
+          font-weight: 400;
+          @media (max-width: 1380px) {
+            margin-bottom: 90px;
+          }
+        }
+        .done-right-top-slide-name {
+          margin-bottom: 40px;
+          padding: 0px 21px;
+          max-width: 220px;
+          color: #ffffff;
+          font-family: "TT Norms";
+          font-size: 24px;
+          font-weight: 500;
+        }
+        .done-right-more {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          span {
+            margin-right: 15px;
+            align-self: center;
+            color: #ffffff;
+            font-family: "TT Norms";
+            font-size: 16px;
+            font-weight: 800;
+            text-transform: uppercase;
+          }
+        }
+      }
+      &:hover {
+        .slide-hidden {
+          cursor: pointer;
+          visibility: visible;
+          opacity: 1;
+          background-color: #e6530ad5;
+        }
+      }
+    }
+    .done-bot-right {
+      margin: 0px auto;
+      margin-top: 50px;
+      width: 300px;
+      background-color: $orange-color;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+      padding: 10px 25px;
+      border-radius: 25px;
+      @media (max-width: 400px) {
+        width: 220px;
+      }
+      &:hover {
+        background-color: $orange-hover;
+        cursor: pointer;
+      }
+      &:active {
+        background-color: $orange-press;
+      }
+      span {
+        color: #ffffff;
+        font-family: "TT Norms";
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        &:hover {
+          cursor: pointer;
+          color: white;
+        }
+        @media (max-width: 400px) {
+          font-size: 14px;
+        }
+      }   
     }
   }
   #done-grid {
@@ -72,10 +178,12 @@
       grid-template-columns: 1fr;
       column-gap: 0px;
     }
+    @media (max-width: 820px) {
+      display: none;
+    }
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr auto;
-    column-gap: 15px;
     .done-left-top {
       @media (max-width: 1230px) {
         display: none;
@@ -89,11 +197,13 @@
         height: 326px;
         img {
           height: 326px;
-          transform: scale(1);
-          animation-duration: 3s;
-          animation-name: imgAnimation;
-          animation-iteration-count: infinite;
-          animation-direction: alternate;
+          object-fit: cover;
+          transition: 0.3s;
+        }
+      }
+      &:hover {
+        img {
+          transform: scale(1.05);
         }
       }
     }
@@ -103,11 +213,6 @@
       justify-content: stretch;
       @media (max-width: 1230px) {
         margin: 0px auto;
-      }
-      .done-mobile-hide {
-        @media (max-width: 550px) {
-          display: none;
-        }
       }
       .done-slide {
         height: 326px;
@@ -160,6 +265,7 @@
         }
         &:hover {
           .slide-hidden {
+            cursor: pointer;
             visibility: visible;
             opacity: 1;
             background-color: #e6530ad5;
@@ -190,11 +296,16 @@
           align-items: center;
           p {
             grid-row: span 2;
-            color: #ffffff;
-            font-family: "TT Norms";
-            font-size: 30px;
-            font-weight: 500;
             max-width: 400px;
+            a {
+              color: #ffffff;
+              font-family: "TT Norms";
+              font-size: 30px;
+              font-weight: 500;
+              &:hover {
+                color: $grey-color;
+              }
+            }
           }
           span {
             justify-self: end;

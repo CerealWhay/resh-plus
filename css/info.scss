@@ -59,6 +59,11 @@
       align-items: start;
       .g-item {
         margin-bottom: 10px;
+        &:hover {
+          img {
+            transform: scale(1.01);
+          }
+        }
       }
       .r-2 {
         grid-row: span 2;

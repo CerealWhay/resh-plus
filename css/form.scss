@@ -2,10 +2,36 @@
 
 #form {
   background-color: $bg-color;
+  .form-error {
+    display: none;
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #e6540a;
+    color: white;
+    font-family: "TT Norms";
+    font-size: 24px;
+    font-weight: 400;
+    span {
+      font-size: 18px;
+    }
+    @media (max-width: 950px) {
+      font-size: 24px;
+    }
+    @media (max-width: 500px) {
+      font-size: 18px;
+      padding-left: 10px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      span {
+        font-size: 14px;
+      }
+    }
+  }
   .form-maintext {
     max-width: 1150px;
     padding-top: 50px;
-    padding-bottom: 64px;
+    padding-bottom: 32px;
     color: #ffffff;
     font-family: "TT Norms";
     font-size: 36px;
@@ -25,11 +51,15 @@
     }
   }
   .form-form {
+    padding-top: 32px;
     margin-left: 100px;
-    padding-bottom: 65px;
+    padding-bottom: 25px;
     @media (max-width: 1450px) {
-      padding-bottom: 40px;
+      padding-bottom: 25px;
       margin-left: 0px;
+    }
+    @media (max-width: 950px) {
+      padding-top: 0px;
     }
     .form-input {
       height: 37px;
@@ -60,6 +90,10 @@
         padding-bottom: 10px;
       }
     }
+    .input-error {
+      border-bottom: 1px solid red;
+      color: red;
+    }
     button {
       margin-left: 90px;
       height: 37px;
@@ -81,6 +115,26 @@
           font-size: 18px;
         }
       }
+    }
+  }
+  .form-textafter {
+    padding-bottom: 25px;
+    width: 70%;
+    color: #ffffff;
+    font-family: "TT Norms";
+    font-size: 11px;
+    font-weight: 100;
+    line-height: 14.11px;
+    text-align: left;
+    a {
+      color: white;
+      font-weight: 600;
+    }
+    @media (max-width: 1050px) {
+      width: 90%;
+    }
+    @media (max-width: 750px) {
+      opacity: 0.3;
     }
   }
 }

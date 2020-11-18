@@ -38,6 +38,7 @@
         font-weight: 700;
         text-align: left;
         text-transform: uppercase;
+        margin-right: 30px;
         @media (max-width: 1050px) {
           font-size: 42px;
         }
@@ -52,7 +53,7 @@
       .m-form-maintext {
         max-width: 1150px;
         padding-top: 50px;
-        padding-bottom: 64px;
+        padding-bottom: 32px;
         color: #ffffff;
         font-family: "TT Norms";
         font-size: 36px;
@@ -73,6 +74,33 @@
         span {
           font-weight: 700;
           color: #e6540a;
+        }
+      }
+      .m-form-error {
+        // display: none;
+        padding-left: 25px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-bottom: 32px;
+        background-color: #e6540a;
+        color: white;
+        font-family: "TT Norms";
+        font-size: 24px;
+        font-weight: 400;
+        span {
+          font-size: 18px;
+        }
+        @media (max-width: 950px) {
+          font-size: 24px;
+        }
+        @media (max-width: 500px) {
+          font-size: 18px;
+          padding-left: 10px;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          span {
+            font-size: 14px;
+          }
         }
       }
       .m-form-form {
@@ -96,6 +124,10 @@
           @media (max-width: 470px) {
             width: 90%;
           }
+        }
+        .input-error {
+          border-bottom: 1px solid red;
+          color: red;
         }
         button {
           margin-left: 90px;
@@ -126,6 +158,10 @@
         font-weight: 100;
         line-height: 14.11px;
         text-align: left;
+        a {
+          color: white;
+          font-weight: 600;
+        }
         @media (max-width: 1050px) {
           width: 90%;
         }
@@ -149,19 +185,36 @@
           justify-content: space-between;
           .m-form-footer-contacts-social-item {
             display: inline-block;
+            height: 21px;
+            padding-right: 25px;
+            margin-right: 15px;
+            border-right: 1px solid white;
+            &:last-child {
+              margin-right: 15px;
+              padding-right: 0px;
+              border-right: 1px solid rgba(255, 255, 255, 0);
+            }
+            @media (max-width: 560px) {
+              margin-right: 10px;
+            }
+            @media (max-width: 400px) {
+              font-size: 14px;
+            }
             a {
-              margin-right: 60px;
               color: #ffffff;
               font-family: "TT Norms";
               font-size: 16px;
               font-weight: 300;
-              padding-right: 25px;
-              border-right: 1px solid white;
-              @media (max-width: 560px) {
-                margin-right: 10px;
+              &::after {
+                content: '';
+                display: block;
+                width: 0;
+                height: 2px;
+                background: white;
+                transition: width .3s;
               }
-              @media (max-width: 400px) {
-                font-size: 14px;
+              &:hover::after {
+                width: 100%;
               }
             }
           }
@@ -213,21 +266,14 @@
       justify-content: flex-end;
     }
     .m-form-close {
+      position: absolute;
       height: 100%;
-      &::before {
-        content: 'x';
-        color: #fff;
-        font-weight: 500;
-        font-size: 36px;
-        font-family: "TT Norms";
+      font-size: 34px;
+      color: white;
+      i {
         &:hover {
           color: $orange-color;
-        }
-      }
-      &:hover {
-        cursor: pointer;
-        &::before {
-          color: $orange-color;
+          cursor: pointer;
         }
       }
     }
