@@ -428,13 +428,13 @@ body #content {
 
 @media (max-width: 1450px) {
   #variants .variants-watch-all {
-    margin-top: 80px;
+    margin-top: 40px;
   }
 }
 
 @media (max-width: 950px) {
   #variants .variants-watch-all {
-    margin-top: 100px;
+    margin-top: 40px;
     margin-bottom: 25px;
   }
 }
