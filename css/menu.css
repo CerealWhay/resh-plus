@@ -134,6 +134,7 @@ body #content {
 }
 
 #modal-menu {
+  display: none;
   position: fixed;
   top: 0px;
   height: 100vh;
