@@ -306,8 +306,8 @@ body #content {
 }
 
 #modal-form .m-container .m-form-content .m-form-form .input-error {
-  border-bottom: 1px solid red;
-  color: red;
+  border-bottom: 1px solid #e6540a;
+  color: #e6540a;
 }
 
 #modal-form .m-container .m-form-content .m-form-form button {
@@ -506,7 +506,7 @@ body #content {
 #modal-form .m-container .m-form-close {
   position: absolute;
   height: 100%;
-  font-size: 34px;
+  font-size: 30px;
   color: white;
 }
 

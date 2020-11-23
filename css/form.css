@@ -196,7 +196,7 @@ body #content {
 
 @media (max-width: 500px) {
   #form .form-maintext {
-    font-size: 18px;
+    font-size: 21px;
   }
 }
 
@@ -259,8 +259,8 @@ body #content {
 }
 
 #form .form-form .input-error {
-  border-bottom: 1px solid red;
-  color: red;
+  border-bottom: 1px solid #e6540a;
+  color: #e6540a;
 }
 
 #form .form-form button {

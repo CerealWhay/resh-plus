@@ -21,13 +21,7 @@
       text-align: left;
       text-transform: uppercase;
       @media (max-width: 950px) {
-        font-size: 24px;
-      }
-      @media (max-width: 500px) {
-        font-size: 18px;
-      }
-      @media (max-width: 350px) {
-        line-height: 24px;
+        font-size: 26px;
       }
     }
     #variants-btns {
@@ -66,7 +60,7 @@
       }
     }
   }
-  #variants-slider-id {
+  .variants-slider {
     .slick-dots {
       li button:before {
         color: black;
@@ -187,18 +181,47 @@
     font-size: 30px;
     font-weight: 800;
     p {
+      color: black;
+      a {
+        color: black;
+        &:hover {
+          cursor: pointer;
+          color: $orange-color;
+        }
+      }
       @media (max-width: 950px) {
         text-align: unset;
         display: none;
       }
+      &:hover {
+        // cursor: pointer;
+        color: $orange-color;
+      }
     }
     &:hover {
-      cursor: pointer;
+      // cursor: pointer;
       color: $orange-color;
+    }
+    .vars-a-mobile {
+      display: none;
+      @media (max-width: 950px) {
+        margin: 0px auto;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        user-select: none;
+        padding: 10px 25px;
+        border-radius: 25px;
+      }
     }
     div {
       display: none;
       margin: 0px auto;
+      a {
+        margin: 0px;
+        padding: 0px;
+      }
       span {
         font-size: 20px;
         font-weight: 700;

@@ -25,12 +25,12 @@
         text-align: left;
         text-transform: uppercase;
         @media (max-width: 950px) {
-          font-size: 24px;
+          font-size: 26px;
+          line-height: 28px;
           margin: 25px 0px;
         }
         @media (max-width: 500px) {
-          font-size: 18px;
-          margin: 5px 0px;
+          margin: 10px 0px;
         }
       }
       .info-maintext-text {
@@ -40,7 +40,7 @@
         font-family: "TT Norms";
         @media (max-width: 400px) {
           font-size: 14px;
-          line-height: 14px;
+          line-height: 22px;
         }
         .info-maintext-text-span {
           padding: 25px 0px;

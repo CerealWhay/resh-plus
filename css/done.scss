@@ -23,10 +23,7 @@
       text-align: left;
       text-transform: uppercase;
       @media (max-width: 950px) {
-        font-size: 24px;
-      }
-      @media (max-width: 500px) {
-        font-size: 18px;
+        font-size: 28px;
       }
     }
     #done-btns {
@@ -139,7 +136,7 @@
       margin: 0px auto;
       margin-top: 50px;
       width: 300px;
-      background-color: $orange-color;
+      background-color: black;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -366,7 +363,7 @@
             margin: 0px auto;
           }
           @media (max-width: 950px) {
-            background-color: $orange-color;
+            background-color: black;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -381,7 +378,6 @@
               background-color: $orange-press;
             }
           }
-          
         }
       }
     }

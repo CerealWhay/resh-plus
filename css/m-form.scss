@@ -126,8 +126,8 @@
           }
         }
         .input-error {
-          border-bottom: 1px solid red;
-          color: red;
+          border-bottom: 1px solid $orange-color;
+          color: $orange-color;
         }
         button {
           margin-left: 90px;
@@ -268,7 +268,7 @@
     .m-form-close {
       position: absolute;
       height: 100%;
-      font-size: 34px;
+      font-size: 30px;
       color: white;
       i {
         &:hover {

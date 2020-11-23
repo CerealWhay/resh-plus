@@ -186,10 +186,10 @@ body #content {
 #modal-menu .m-container .m-menu-nav ul .m-open-ul::after {
   display: inline-block;
   vertical-align: top;
-  font-family: "Font Awesome 5 Free";
-  content: "\f105";
-  font-weight: 700;
-  font-size: 42px;
+  font-family: "LineIcons";
+  content: "\ea5c";
+  font-weight: 100;
+  font-size: 28px;
   color: #e6540a;
   margin-left: 15px;
   -webkit-transition: 0.3s;
@@ -305,7 +305,7 @@ body #content {
 
 #modal-menu .m-container .m-menu-close {
   height: 100%;
-  font-size: 34px;
+  font-size: 30px;
   color: white;
 }
 

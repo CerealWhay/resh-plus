@@ -177,28 +177,32 @@ body #content {
   color: #000000;
   font-family: "TT Norms";
   font-weight: 400;
+}
+
+#reviews .reviews-maintext .reviews-maintext-title {
   line-height: 36px;
   text-align: left;
   font-size: 36px;
   text-transform: uppercase;
+  padding-bottom: 10px;
 }
 
 @media (max-width: 950px) {
-  #reviews .reviews-maintext {
-    padding-top: 25px;
-    padding-bottom: 25px;
+  #reviews .reviews-maintext .reviews-maintext-title {
+    font-size: 28px;
   }
 }
 
-@media (max-width: 620px) {
-  #reviews .reviews-maintext {
-    color: #fff;
+@media (max-width: 500px) {
+  #reviews .reviews-maintext .reviews-maintext-title {
+    font-size: 24px;
+    line-height: 28px;
   }
 }
 
 #reviews .reviews-maintext span {
   font-size: 24px;
-  line-height: normal;
+  line-height: 8px;
   text-transform: none;
 }
 
@@ -222,14 +226,15 @@ body #content {
 
 @media (max-width: 950px) {
   #reviews .reviews-maintext {
-    font-size: 24px;
+    font-size: 26px;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 620px) {
   #reviews .reviews-maintext {
-    font-size: 18px;
-    line-height: 24px;
+    color: #fff;
   }
 }
 
@@ -365,7 +370,7 @@ body #content {
 
 @media (max-width: 400px) {
   #reviews .reviews-slider-slick .rev-slide .rev-slide-text .rev-slide-maintext {
-    line-height: 14px;
+    line-height: 22px;
   }
 }
 
@@ -391,8 +396,22 @@ body #content {
   }
 }
 
+@media (max-width: 500px) {
+  #reviews .reviews-slider-slick .rev-slide .rev-slide-text .rev-slide-proofs {
+    display: block;
+    margin-top: 0px;
+  }
+}
+
 #reviews .reviews-slider-slick .rev-slide .rev-slide-text .rev-slide-proofs .rev-proof {
   padding-right: 50px;
+}
+
+@media (max-width: 500px) {
+  #reviews .reviews-slider-slick .rev-slide .rev-slide-text .rev-slide-proofs .rev-proof {
+    padding-top: 20px;
+    padding-right: 0px;
+  }
 }
 
 #reviews .reviews-slider-slick .rev-slide .rev-slide-text .rev-slide-proofs .rev-proof a {
@@ -435,18 +454,6 @@ body #content {
   text-transform: uppercase;
 }
 
-@media (max-width: 440px) {
-  #reviews .reviews-slider-slick .rev-slide .rev-slide-text .rev-slide-proofs .rev-slide-proofs-p {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 400px) {
-  #reviews .reviews-slider-slick .rev-slide .rev-slide-text .rev-slide-proofs .rev-slide-proofs-p {
-    font-size: 10px;
-  }
-}
-
 #reviews .reviews-slider-slick .rev-slide .rev-slide-text .rev-slide-proofs span {
   padding-left: 20px;
   color: #9b9b9b;
@@ -459,12 +466,6 @@ body #content {
 @media (max-width: 440px) {
   #reviews .reviews-slider-slick .rev-slide .rev-slide-text .rev-slide-proofs span {
     font-size: 14px;
-  }
-}
-
-@media (max-width: 400px) {
-  #reviews .reviews-slider-slick .rev-slide .rev-slide-text .rev-slide-proofs span {
-    font-size: 10px;
   }
 }
 /*# sourceMappingURL=reviews.css.map */

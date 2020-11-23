@@ -171,13 +171,7 @@ body #content {
 
 @media (max-width: 950px) {
   #done-works #done-works-maintext .done-works-maintext-name {
-    font-size: 24px;
-  }
-}
-
-@media (max-width: 500px) {
-  #done-works #done-works-maintext .done-works-maintext-name {
-    font-size: 18px;
+    font-size: 28px;
   }
 }
 
@@ -326,7 +320,7 @@ body #content {
   margin: 0px auto;
   margin-top: 50px;
   width: 300px;
-  background-color: #e6540a;
+  background-color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -675,7 +669,7 @@ body #content {
 
 @media (max-width: 950px) {
   #done-works #done-grid .done-bot .container .done-bot-right {
-    background-color: #e6540a;
+    background-color: black;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

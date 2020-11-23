@@ -523,23 +523,24 @@ body #content {
 }
 
 #m-footer #footer-call div {
-  width: 146px;
+  width: 228px;
   height: 36px;
   border-radius: 18px;
 }
 
 #m-footer #footer-call div span {
   font-family: "TT Norms";
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 600;
   font-style: normal;
   letter-spacing: normal;
+  text-transform: uppercase;
   line-height: normal;
   text-align: center;
 }
 
 #m-footer #footer-nav {
-  margin-top: 40px;
+  margin-top: 20px;
   max-width: 882px;
 }
 
@@ -586,7 +587,7 @@ body #content {
     display: block;
     width: 100%;
     text-align: center;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
   }
 }
 
@@ -605,7 +606,7 @@ body #content {
 }
 
 #m-footer .footer-contacts-social {
-  margin-top: 40px;
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -693,6 +694,7 @@ body #content {
 }
 
 #m-footer .footer-adress-disclaimer {
+  text-align: center;
   padding-bottom: 25px;
   color: #ffffff4f;
   font-family: "TT Norms";
@@ -713,6 +715,7 @@ body #content {
 }
 
 #m-footer .footer-adress-adress {
+  text-align: center;
   margin-top: 15px;
   color: #ffffff;
   font-family: "TT Norms";

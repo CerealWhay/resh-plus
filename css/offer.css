@@ -158,6 +158,18 @@ body #content {
   margin: 0px auto;
 }
 
+#our-offer .offer-afterbg {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.39);
+}
+
+@media (max-width: 425px) {
+  #our-offer .offer-afterbg {
+    display: block;
+    height: 40px;
+  }
+}
+
 #our-offer #of-bg {
   width: 1630px;
   position: absolute;
@@ -168,7 +180,7 @@ body #content {
 @media (max-width: 425px) {
   #our-offer #of-bg {
     position: relative;
-    height: 110px;
+    height: 160px;
   }
 }
 
@@ -185,7 +197,7 @@ body #content {
 
 @media (max-width: 425px) {
   #our-offer #of-bg p {
-    padding-top: 0px;
+    padding-top: 30px;
   }
 }
 
@@ -202,18 +214,13 @@ body #content {
 @media (max-width: 500px) {
   #our-offer #of-bg p span {
     font-size: 16px;
+    padding-top: 20px;
   }
 }
 
 @media (max-width: 950px) {
   #our-offer #of-bg p {
-    font-size: 24px;
-  }
-}
-
-@media (max-width: 500px) {
-  #our-offer #of-bg p {
-    font-size: 18px;
+    font-size: 26px;
   }
 }
 
@@ -317,6 +324,10 @@ body #content {
     font-size: 10px;
     margin-top: 10px;
   }
+}
+
+#our-offer #of-slider .of-slide:hover {
+  cursor: pointer;
 }
 
 #our-offer #of-slider .of-slide:hover .of-slide-text {

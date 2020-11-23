@@ -33,20 +33,23 @@
     color: #000000;
     font-family: "TT Norms";
     font-weight: 400;
-    line-height: 36px;
-    text-align: left;
-    font-size: 36px;
-    text-transform: uppercase;
-    @media (max-width: 950px) {
-      padding-top: 25px;
-      padding-bottom: 25px;
-    }
-    @media (max-width: 620px) {
-      color: #fff;
+    .reviews-maintext-title {
+      line-height: 36px;
+      text-align: left;
+      font-size: 36px;
+      text-transform: uppercase;
+      padding-bottom: 10px;
+      @media (max-width: 950px) {
+        font-size: 28px;
+      }
+      @media (max-width: 500px) {
+        font-size: 24px;
+        line-height: 28px;
+      }
     }
     span {
       font-size: 24px;
-      line-height: normal;
+      line-height: 8px;
       text-transform: none;
       @media (max-width: 950px) {
         font-size: 18px;
@@ -59,11 +62,12 @@
       font-size: 34px;
     }
     @media (max-width: 950px) {
-      font-size: 24px;
+      font-size: 26px;
+      padding-top: 25px;
+      padding-bottom: 25px;
     }
-    @media (max-width: 500px) {
-      font-size: 18px;
-      line-height: 24px;
+    @media (max-width: 620px) {
+      color: #fff;
     }
   }
   .reviews-slider-slick {
@@ -147,7 +151,7 @@
             font-size: 14px;
           }
           @media (max-width: 400px) {
-            line-height: 14px;
+            line-height: 22px;
           }
           @media (max-width: 330px) {
             width: 290px;
@@ -161,8 +165,16 @@
             grid-row: 3;
             margin-bottom: 0px;
           }
+          @media (max-width: 500px) {
+            display: block;
+            margin-top: 0px;
+          }
           .rev-proof {
             padding-right: 50px;
+            @media (max-width: 500px) {
+              padding-top: 20px;
+              padding-right: 0px;
+            }
             a {
               display: flex;
               align-items: center;
@@ -191,12 +203,6 @@
             font-weight: 800;
             text-align: left;
             text-transform: uppercase;
-            @media (max-width: 440px) {
-              font-size: 14px;
-            }
-            @media (max-width: 400px) {
-              font-size: 10px;
-            }
           }
           span {
             padding-left: 20px;
@@ -207,9 +213,6 @@
             text-transform: uppercase;
             @media (max-width: 440px) {
               font-size: 14px;
-            }
-            @media (max-width: 400px) {
-              font-size: 10px;
             }
           }
         }

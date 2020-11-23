@@ -169,19 +169,7 @@ body #content {
 
 @media (max-width: 950px) {
   #variants #variants-maintext .variants-maintext-name {
-    font-size: 24px;
-  }
-}
-
-@media (max-width: 500px) {
-  #variants #variants-maintext .variants-maintext-name {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 350px) {
-  #variants #variants-maintext .variants-maintext-name {
-    line-height: 24px;
+    font-size: 26px;
   }
 }
 
@@ -228,23 +216,23 @@ body #content {
   color: white;
 }
 
-#variants #variants-slider-id .slick-dots li button:before {
+#variants .variants-slider .slick-dots li button:before {
   color: black;
 }
 
-#variants #variants-slider-id .slick-dots li.slick-active button {
+#variants .variants-slider .slick-dots li.slick-active button {
   border: 2px solid black;
   border-radius: 20px;
 }
 
 @media (max-width: 1450px) {
-  #variants #variants-slider-id .slick-dots {
+  #variants .variants-slider .slick-dots {
     bottom: -70px;
   }
 }
 
 @media (max-width: 330px) {
-  #variants #variants-slider-id .slick-dots {
+  #variants .variants-slider .slick-dots {
     bottom: -50px;
   }
 }
@@ -393,6 +381,19 @@ body #content {
   font-weight: 800;
 }
 
+#variants .variants-watch-all p {
+  color: black;
+}
+
+#variants .variants-watch-all p a {
+  color: black;
+}
+
+#variants .variants-watch-all p a:hover {
+  cursor: pointer;
+  color: #e6540a;
+}
+
 @media (max-width: 950px) {
   #variants .variants-watch-all p {
     text-align: unset;
@@ -400,14 +401,48 @@ body #content {
   }
 }
 
-#variants .variants-watch-all:hover {
-  cursor: pointer;
+#variants .variants-watch-all p:hover {
   color: #e6540a;
+}
+
+#variants .variants-watch-all:hover {
+  color: #e6540a;
+}
+
+#variants .variants-watch-all .vars-a-mobile {
+  display: none;
+}
+
+@media (max-width: 950px) {
+  #variants .variants-watch-all .vars-a-mobile {
+    margin: 0px auto;
+    width: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+  }
 }
 
 #variants .variants-watch-all div {
   display: none;
   margin: 0px auto;
+}
+
+#variants .variants-watch-all div a {
+  margin: 0px;
+  padding: 0px;
 }
 
 #variants .variants-watch-all div span {
