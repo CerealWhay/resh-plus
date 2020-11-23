@@ -196,7 +196,14 @@ body #content {
 
 @media (max-width: 750px) {
   #modal-form .m-container .m-form-content .m-form-content-title {
-    font-size: 36px;
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 500px) {
+  #modal-form .m-container .m-form-content .m-form-content-title {
+    text-align: center;
+    margin-right: 0px;
   }
 }
 
@@ -229,6 +236,12 @@ body #content {
   #modal-form .m-container .m-form-content .m-form-maintext {
     font-size: 22px;
     padding-bottom: 5px;
+  }
+}
+
+@media (max-width: 500px) {
+  #modal-form .m-container .m-form-content .m-form-maintext {
+    text-align: center;
   }
 }
 
@@ -326,6 +339,14 @@ body #content {
   }
 }
 
+@media (max-width: 500px) {
+  #modal-form .m-container .m-form-content .m-form-form button {
+    display: block;
+    margin: 0px auto;
+    margin-top: 20px;
+  }
+}
+
 #modal-form .m-container .m-form-content .m-form-form button span {
   color: #ffffff;
   font-family: "Futura PT Book";
@@ -364,6 +385,13 @@ body #content {
   }
 }
 
+@media (max-width: 500px) {
+  #modal-form .m-container .m-form-content .m-form-textafter {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 #modal-form .m-container .m-form-content .m-form-footer-contacts {
   margin-top: 25px;
   display: -webkit-box;
@@ -383,6 +411,15 @@ body #content {
   }
 }
 
+@media (max-width: 500px) {
+  #modal-form .m-container .m-form-content .m-form-footer-contacts {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+  }
+}
+
 #modal-form .m-container .m-form-content .m-form-footer-contacts .m-form-footer-contacts-social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -390,6 +427,14 @@ body #content {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 500px) {
+  #modal-form .m-container .m-form-content .m-form-footer-contacts .m-form-footer-contacts-social {
+    width: 200px;
+    margin: 0px auto;
+    padding-left: 30px;
+  }
 }
 
 #modal-form .m-container .m-form-content .m-form-footer-contacts .m-form-footer-contacts-social .m-form-footer-contacts-social-item {
@@ -406,9 +451,26 @@ body #content {
   border-right: 1px solid rgba(255, 255, 255, 0);
 }
 
+@media (max-width: 500px) {
+  #modal-form .m-container .m-form-content .m-form-footer-contacts .m-form-footer-contacts-social .m-form-footer-contacts-social-item:last-child {
+    display: none;
+  }
+}
+
 @media (max-width: 560px) {
   #modal-form .m-container .m-form-content .m-form-footer-contacts .m-form-footer-contacts-social .m-form-footer-contacts-social-item {
     margin-right: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  #modal-form .m-container .m-form-content .m-form-footer-contacts .m-form-footer-contacts-social .m-form-footer-contacts-social-item {
+    border-right: 1px solid rgba(255, 255, 255, 0);
+    padding-right: 20px;
+  }
+  #modal-form .m-container .m-form-content .m-form-footer-contacts .m-form-footer-contacts-social .m-form-footer-contacts-social-item:first-child {
+    margin-right: 15px;
+    border-right: 1px solid white;
   }
 }
 
@@ -439,10 +501,40 @@ body #content {
   width: 100%;
 }
 
+#modal-form .m-container .m-form-content .m-form-footer-contacts .m-form-footer-email-hidden {
+  display: none;
+  height: 21px;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  #modal-form .m-container .m-form-content .m-form-footer-contacts .m-form-footer-email-hidden {
+    display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+#modal-form .m-container .m-form-content .m-form-footer-contacts .m-form-footer-email-hidden a {
+  color: #ffffff;
+  font-family: "TT Norms";
+  font-size: 20px;
+  font-weight: 300;
+}
+
 @media (max-width: 750px) {
   #modal-form .m-container .m-form-content .m-form-footer-contacts .m-form-footer-contacts-tel {
     display: block;
     margin-top: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  #modal-form .m-container .m-form-content .m-form-footer-contacts .m-form-footer-contacts-tel {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    margin-top: 0px;
+    text-align: center;
   }
 }
 
@@ -453,7 +545,7 @@ body #content {
   font-weight: 400;
 }
 
-#modal-form .m-container .m-form-content .m-form-footer-contacts .m-form-footer-contacts-tel::after {
+#modal-form .m-container .m-form-content .m-form-footer-contacts .m-form-footer-contacts-tel a::after {
   content: '';
   display: block;
   width: 0;
@@ -463,33 +555,37 @@ body #content {
   transition: width .3s;
 }
 
-#modal-form .m-container .m-form-content .m-form-footer-contacts .m-form-footer-contacts-tel:hover::after {
+@media (max-width: 500px) {
+  #modal-form .m-container .m-form-content .m-form-footer-contacts .m-form-footer-contacts-tel a::after {
+    height: 0px;
+  }
+}
+
+#modal-form .m-container .m-form-content .m-form-footer-contacts .m-form-footer-contacts-tel a:hover::after {
   width: 100%;
 }
 
 #modal-form .m-container .m-form-content .m-form-footer-adress {
   margin-top: 25px;
   padding-bottom: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#modal-form .m-container .m-form-content .m-form-footer-adress .m-form-footer-adress-adress {
   color: #ffffff;
   font-family: "TT Norms";
   font-size: 18px;
   font-weight: 400;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  #modal-form .m-container .m-form-content .m-form-footer-adress {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    margin-top: 0px;
+    padding-bottom: 15px;
+  }
 }
 
 @media (max-width: 400px) {
-  #modal-form .m-container .m-form-content .m-form-footer-adress .m-form-footer-adress-adress {
+  #modal-form .m-container .m-form-content .m-form-footer-adress {
     font-size: 14px;
   }
 }
@@ -503,14 +599,26 @@ body #content {
           justify-content: flex-end;
 }
 
-#modal-form .m-container .m-form-close {
+@media (max-width: 500px) {
+  #modal-form .m-container .m-form-close-wrap {
+    margin-bottom: 40px;
+  }
+}
+
+#modal-form .m-container .m-form-close-wrap .m-form-close {
   position: absolute;
   height: 100%;
   font-size: 30px;
   color: white;
 }
 
-#modal-form .m-container .m-form-close i:hover {
+@media (max-width: 500px) {
+  #modal-form .m-container .m-form-close-wrap .m-form-close {
+    display: block;
+  }
+}
+
+#modal-form .m-container .m-form-close-wrap .m-form-close i:hover {
   color: #e6540a;
   cursor: pointer;
 }

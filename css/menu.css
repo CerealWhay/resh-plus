@@ -134,7 +134,6 @@ body #content {
 }
 
 #modal-menu {
-  display: none;
   position: fixed;
   top: 0px;
   height: 100vh;
@@ -198,15 +197,16 @@ body #content {
 
 @media (max-width: 610px) {
   #modal-menu .m-container .m-menu-nav ul .m-open-ul::after {
-    font-size: 36px;
-    vertical-align: sub;
+    font-size: 20px;
+    vertical-align: baseline;
   }
 }
 
 @media (max-width: 400px) {
   #modal-menu .m-container .m-menu-nav ul .m-open-ul::after {
-    font-size: 22px;
-    vertical-align: middle;
+    font-size: 14px;
+    margin-left: 10px;
+    vertical-align: inherit;
   }
 }
 
