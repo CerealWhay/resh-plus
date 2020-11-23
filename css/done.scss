@@ -75,7 +75,9 @@
       height: 326px;
       width: 315px; 
       background-position: center center;
-      background-repeat: no-repeat; 
+      background-repeat: no-repeat;
+      background-size: auto 326px;
+      transition: 0.3s;
       @media (max-width: 370px) {
         width: 260px;
       }
@@ -124,6 +126,7 @@
         }
       }
       &:hover {
+        background-size: auto 346px;
         .slide-hidden {
           cursor: pointer;
           visibility: visible;
@@ -198,6 +201,63 @@
           transition: 0.3s;
         }
       }
+      .done-bot-left {
+        @media (max-width: 1450px) {
+          grid-template-columns: 400px 160px;
+        }
+        padding-top: 40px;
+        padding-right: 40px;
+        float: right;
+        display: grid;
+        grid-template-columns: 490px 160px;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        p {
+          grid-row: span 2;
+          max-width: 400px;
+          a {
+            color: #ffffff;
+            font-family: "TT Norms";
+            font-size: 30px;
+            font-weight: 500;
+            &:hover {
+              color: $grey-color;
+            }
+          }
+        }
+        span {
+          justify-self: end;
+          align-self: start;
+          color: #ffffff;
+          font-family: "TT Norms";
+          font-size: 14px;
+          font-weight: 400;
+          &:hover {
+            cursor: pointer;
+            color: $grey-color;
+          }
+        }
+        .done-left-more {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          span {
+            margin-right: 15px;
+            align-self: center;
+            color: #ffffff;
+            font-family: "TT Norms";
+            font-size: 16px;
+            font-weight: 800;
+            text-transform: uppercase;
+          }
+          &:hover {
+            cursor: pointer;
+            span {
+              color: $grey-color;
+            }
+          }
+        }
+      }
       &:hover {
         img {
           transform: scale(1.05);
@@ -205,17 +265,24 @@
       }
     }
     .done-right-top {
-      overflow: hidden;
-      display: flex;
-      justify-content: stretch;
       @media (max-width: 1230px) {
         margin: 0px auto;
+      }
+      .done-right-top-slides {
+        overflow: hidden;
+        display: flex;
+        justify-content: stretch;
+        @media (max-width: 1230px) {
+          margin: 0px auto;
+        }
       }
       .done-slide {
         height: 326px;
         width: 100%; 
         background-position: center center;
         background-repeat: no-repeat;
+        background-size: auto 326px;
+        transition: 0.3s;
         .slide-hidden {
           display: inline-block;
           visibility: hidden;
@@ -261,6 +328,7 @@
           }
         }
         &:hover {
+          background-size: auto 346px;
           .slide-hidden {
             cursor: pointer;
             visibility: visible;
@@ -269,114 +337,28 @@
           }
         }
       }
-    }
-    .done-bot {
-      grid-column: span 2;
-      margin-top: -110px;
-      @media (max-width: 1230px) {
-        margin-top: 30px;
-        margin-bottom: 30px;
-      }
-      .container {
-        display: flex;
-        justify-content: space-between;
-        .done-bot-left {
-          @media (max-width: 1450px) {
-            grid-template-columns: 400px auto;
-          }
-          @media (max-width: 1230px) {
-            display: none;
-          }
-          display: grid;
-          grid-template-columns: 450px auto;
-          grid-template-rows: 1fr 1fr;
-          align-items: center;
-          p {
-            grid-row: span 2;
-            max-width: 400px;
-            a {
-              color: #ffffff;
-              font-family: "TT Norms";
-              font-size: 30px;
-              font-weight: 500;
-              &:hover {
-                color: $grey-color;
-              }
-            }
-          }
-          span {
-            justify-self: end;
-            align-self: start;
-            color: #ffffff;
-            font-family: "TT Norms";
-            font-size: 14px;
-            font-weight: 400;
-            &:hover {
-              cursor: pointer;
-              color: $grey-color;
-            }
-          }
-          .done-left-more {
-            height: 100%;
-            display: flex;
-            align-items: center;
-            span {
-              margin-right: 15px;
-              align-self: center;
-              color: #ffffff;
-              font-family: "TT Norms";
-              font-size: 16px;
-              font-weight: 800;
-              text-transform: uppercase;
-            }
-            &:hover {
-              cursor: pointer;
-              span {
-                color: $grey-color;
-              }
-            }
-          }
+      .done-bot-right {
+        @media (max-width: 1450px) {
+          width: 600px;
         }
-        .done-bot-right {
-          span {
-            color: #ffffff;
-            font-family: "TT Norms";
-            font-size: 30px;
-            font-weight: 800;
-            &:hover {
-              cursor: pointer;
-              color: $orange-color;
-              @media (max-width: 950px) {
-                color: white;
-              }
-            }
-            @media (max-width: 950px) {
-              font-size: 20px;
-              font-weight: 700;
-              text-transform: uppercase;
-            }
-            @media (max-width: 400px) {
-              font-size: 14px;
-            }
-          }
-          @media (max-width: 1230px) {
-            margin: 0px auto;
-          }
-          @media (max-width: 950px) {
-            background-color: black;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            user-select: none;
-            padding: 10px 25px;
-            border-radius: 25px;
-            &:hover {
-              background-color: $orange-hover;
-              cursor: pointer;
-            }
-            &:active {
-              background-color: $orange-press;
-            }
+        @media (max-width: 1230px) {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          padding-top: 25px;
+          padding-bottom: 25px;
+        }
+        width: 690px;
+        padding-top: 50px;
+        span {
+          float: right;
+          color: #ffffff;
+          font-family: "TT Norms";
+          font-size: 30px;
+          font-weight: 800;
+          &:hover {
+            cursor: pointer;
+            color: $orange-color;
           }
         }
       }

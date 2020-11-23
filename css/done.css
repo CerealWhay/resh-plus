@@ -240,6 +240,9 @@ body #content {
   width: 315px;
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: auto 326px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 @media (max-width: 370px) {
@@ -307,6 +310,10 @@ body #content {
   font-size: 16px;
   font-weight: 800;
   text-transform: uppercase;
+}
+
+#done-works .done-slider-mobile .done-slide:hover {
+  background-size: auto 346px;
 }
 
 #done-works .done-slider-mobile .done-slide:hover .slide-hidden {
@@ -424,12 +431,103 @@ body #content {
   transition: 0.3s;
 }
 
+#done-works #done-grid .done-left-top .done-bot-left {
+  padding-top: 40px;
+  padding-right: 40px;
+  float: right;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 490px 160px;
+      grid-template-columns: 490px 160px;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1450px) {
+  #done-works #done-grid .done-left-top .done-bot-left {
+    -ms-grid-columns: 400px 160px;
+        grid-template-columns: 400px 160px;
+  }
+}
+
+#done-works #done-grid .done-left-top .done-bot-left p {
+  grid-row: span 2;
+  max-width: 400px;
+}
+
+#done-works #done-grid .done-left-top .done-bot-left p a {
+  color: #ffffff;
+  font-family: "TT Norms";
+  font-size: 30px;
+  font-weight: 500;
+}
+
+#done-works #done-grid .done-left-top .done-bot-left p a:hover {
+  color: #efefef;
+}
+
+#done-works #done-grid .done-left-top .done-bot-left span {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  color: #ffffff;
+  font-family: "TT Norms";
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#done-works #done-grid .done-left-top .done-bot-left span:hover {
+  cursor: pointer;
+  color: #efefef;
+}
+
+#done-works #done-grid .done-left-top .done-bot-left .done-left-more {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#done-works #done-grid .done-left-top .done-bot-left .done-left-more span {
+  margin-right: 15px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #ffffff;
+  font-family: "TT Norms";
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+#done-works #done-grid .done-left-top .done-bot-left .done-left-more:hover {
+  cursor: pointer;
+}
+
+#done-works #done-grid .done-left-top .done-bot-left .done-left-more:hover span {
+  color: #efefef;
+}
+
 #done-works #done-grid .done-left-top:hover img {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
 
-#done-works #done-grid .done-right-top {
+@media (max-width: 1230px) {
+  #done-works #done-grid .done-right-top {
+    margin: 0px auto;
+  }
+}
+
+#done-works #done-grid .done-right-top .done-right-top-slides {
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -440,7 +538,7 @@ body #content {
 }
 
 @media (max-width: 1230px) {
-  #done-works #done-grid .done-right-top {
+  #done-works #done-grid .done-right-top .done-right-top-slides {
     margin: 0px auto;
   }
 }
@@ -450,6 +548,9 @@ body #content {
   width: 100%;
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: auto 326px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 #done-works #done-grid .done-right-top .done-slide .slide-hidden {
@@ -513,6 +614,10 @@ body #content {
   text-transform: uppercase;
 }
 
+#done-works #done-grid .done-right-top .done-slide:hover {
+  background-size: auto 346px;
+}
+
 #done-works #done-grid .done-right-top .done-slide:hover .slide-hidden {
   cursor: pointer;
   visibility: visible;
@@ -520,178 +625,41 @@ body #content {
   background-color: #e6530ad5;
 }
 
-#done-works #done-grid .done-bot {
-  grid-column: span 2;
-  margin-top: -110px;
-}
-
-@media (max-width: 1230px) {
-  #done-works #done-grid .done-bot {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-}
-
-#done-works #done-grid .done-bot .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-#done-works #done-grid .done-bot .container .done-bot-left {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 450px auto;
-      grid-template-columns: 450px auto;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+#done-works #done-grid .done-right-top .done-bot-right {
+  width: 690px;
+  padding-top: 50px;
 }
 
 @media (max-width: 1450px) {
-  #done-works #done-grid .done-bot .container .done-bot-left {
-    -ms-grid-columns: 400px auto;
-        grid-template-columns: 400px auto;
+  #done-works #done-grid .done-right-top .done-bot-right {
+    width: 600px;
   }
 }
 
 @media (max-width: 1230px) {
-  #done-works #done-grid .done-bot .container .done-bot-left {
-    display: none;
-  }
-}
-
-#done-works #done-grid .done-bot .container .done-bot-left p {
-  grid-row: span 2;
-  max-width: 400px;
-}
-
-#done-works #done-grid .done-bot .container .done-bot-left p a {
-  color: #ffffff;
-  font-family: "TT Norms";
-  font-size: 30px;
-  font-weight: 500;
-}
-
-#done-works #done-grid .done-bot .container .done-bot-left p a:hover {
-  color: #efefef;
-}
-
-#done-works #done-grid .done-bot .container .done-bot-left span {
-  -ms-grid-column-align: end;
-      justify-self: end;
-  -ms-flex-item-align: start;
-      -ms-grid-row-align: start;
-      align-self: start;
-  color: #ffffff;
-  font-family: "TT Norms";
-  font-size: 14px;
-  font-weight: 400;
-}
-
-#done-works #done-grid .done-bot .container .done-bot-left span:hover {
-  cursor: pointer;
-  color: #efefef;
-}
-
-#done-works #done-grid .done-bot .container .done-bot-left .done-left-more {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#done-works #done-grid .done-bot .container .done-bot-left .done-left-more span {
-  margin-right: 15px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  color: #ffffff;
-  font-family: "TT Norms";
-  font-size: 16px;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-
-#done-works #done-grid .done-bot .container .done-bot-left .done-left-more:hover {
-  cursor: pointer;
-}
-
-#done-works #done-grid .done-bot .container .done-bot-left .done-left-more:hover span {
-  color: #efefef;
-}
-
-#done-works #done-grid .done-bot .container .done-bot-right span {
-  color: #ffffff;
-  font-family: "TT Norms";
-  font-size: 30px;
-  font-weight: 800;
-}
-
-#done-works #done-grid .done-bot .container .done-bot-right span:hover {
-  cursor: pointer;
-  color: #e6540a;
-}
-
-@media (max-width: 950px) {
-  #done-works #done-grid .done-bot .container .done-bot-right span:hover {
-    color: white;
-  }
-}
-
-@media (max-width: 950px) {
-  #done-works #done-grid .done-bot .container .done-bot-right span {
-    font-size: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-}
-
-@media (max-width: 400px) {
-  #done-works #done-grid .done-bot .container .done-bot-right span {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 1230px) {
-  #done-works #done-grid .done-bot .container .done-bot-right {
-    margin: 0px auto;
-  }
-}
-
-@media (max-width: 950px) {
-  #done-works #done-grid .done-bot .container .done-bot-right {
-    background-color: black;
+  #done-works #done-grid .done-right-top .done-bot-right {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    padding: 10px 25px;
-    border-radius: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
-  #done-works #done-grid .done-bot .container .done-bot-right:hover {
-    background-color: #e6540a;
-    cursor: pointer;
-  }
-  #done-works #done-grid .done-bot .container .done-bot-right:active {
-    background-color: #d14e0c;
-  }
+}
+
+#done-works #done-grid .done-right-top .done-bot-right span {
+  float: right;
+  color: #ffffff;
+  font-family: "TT Norms";
+  font-size: 30px;
+  font-weight: 800;
+}
+
+#done-works #done-grid .done-right-top .done-bot-right span:hover {
+  cursor: pointer;
+  color: #e6540a;
 }
 /*# sourceMappingURL=done.css.map */
