@@ -4,6 +4,9 @@ $(document).ready(function(){
     dots: true,
     autoplay: true,
     autoplaySpeed: 3000,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
   });
   $('.offer-slider-slick').slick({
     arrows: false,
