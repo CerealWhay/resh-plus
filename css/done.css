@@ -227,9 +227,10 @@ body #content {
 
 #done-works .done-slider-mobile .slick-dots li button:before {
   color: white;
+  border: 2px solid rgba(255, 255, 255, 0);
 }
 
-#done-works .done-slider-mobile .slick-dots li.slick-active button {
+#done-works .done-slider-mobile .slick-dots li.slick-active button:before {
   border: 2px solid white;
   border-radius: 20px;
 }

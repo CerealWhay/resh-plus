@@ -146,9 +146,10 @@ body #content {
 
 #our-offer .slick-dots li button:before {
   color: white;
+  border: 2px solid rgba(255, 255, 255, 0);
 }
 
-#our-offer .slick-dots li.slick-active button {
+#our-offer .slick-dots li.slick-active button:before {
   border: 2px solid white;
   border-radius: 20px;
 }

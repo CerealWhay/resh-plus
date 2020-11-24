@@ -10,19 +10,21 @@
     bottom: 10px;
     li button:before {
       color: black;
+      border: 2px solid rgba(0, 0, 0, 0);
     }
-    li.slick-active button {
+    li.slick-active button:before {
       border: 2px solid black;
       border-radius: 20px;
     }
     @media (max-width: 620px) {
       top: 150px;
       height: 40px;
-      li.slick-active button {
+      li.slick-active button:before {
         border: 2px solid white;
       }
       li button:before {
         color: white;
+        border: 2px solid rgba(0, 0, 0, 0);
       }
     }
   }

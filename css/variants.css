@@ -218,9 +218,10 @@ body #content {
 
 #variants .variants-slider .slick-dots li button:before {
   color: black;
+  border: 2px solid rgba(0, 0, 0, 0);
 }
 
-#variants .variants-slider .slick-dots li.slick-active button {
+#variants .variants-slider .slick-dots li.slick-active button:before {
   border: 2px solid black;
   border-radius: 20px;
 }

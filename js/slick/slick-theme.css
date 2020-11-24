@@ -161,6 +161,6 @@
 
 .slick-dots li.slick-active button:before {
   color: black;
-  opacity: 0.75;
+  opacity: 1;
 }
 /*# sourceMappingURL=slick-theme.css.map */

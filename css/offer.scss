@@ -9,8 +9,9 @@
     bottom: -60px;
     li button:before {
       color: white;
+      border: 2px solid rgba(255, 255, 255, 0);
     }
-    li.slick-active button {
+    li.slick-active button:before {
       border: 2px solid white;
       border-radius: 20px;
     }
