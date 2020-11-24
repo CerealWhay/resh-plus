@@ -183,6 +183,10 @@ body #content {
   }
 }
 
+#modal-menu .m-container .m-menu-nav {
+  padding-bottom: 50px;
+}
+
 #modal-menu .m-container .m-menu-nav ul .m-open-ul::after {
   display: inline-block;
   vertical-align: top;
